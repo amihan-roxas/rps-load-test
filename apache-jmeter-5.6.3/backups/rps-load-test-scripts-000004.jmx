@@ -9,7 +9,7 @@
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
-      <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+      <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer">
         <intProp name="groupSize">0</intProp>
         <longProp name="timeoutInMs">0</longProp>
       </SyncTimer>
@@ -744,7 +744,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.A" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.A"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -1204,7 +1204,7 @@
                     <stringProp name="Argument.value">{&#xd;
     &quot;operationName&quot;: &quot;createPerson&quot;,&#xd;
     &quot;variables&quot;: {&#xd;
-        &quot;firstName&quot;: &quot;${firstName}_${__time(HHmmss)}&quot;,&#xd;
+        &quot;firstName&quot;: &quot;${firstName}_${__time(HHmmss})&quot;,&#xd;
         &quot;middleName&quot;: null,&#xd;
         &quot;lastName&quot;: &quot;${lastName}_${__time(HHmmss)}&quot;,&#xd;
         &quot;birthday&quot;:${birthday},&#xd;
@@ -1575,7 +1575,7 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
