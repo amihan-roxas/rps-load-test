@@ -115,3 +115,21 @@
 2026-01-16 16:00:11,639 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
 2026-01-16 16:00:11,639 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/indi.csv
 2026-01-16 16:00:11,639 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-01-16 16:14:48,287 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-01-16 16:14:48,288 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-16 16:14:48,289 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-01-16 16:14:48,363 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
+2026-01-16 16:14:48,363 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Users.
+2026-01-16 16:14:48,364 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-01-16 16:14:48,364 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2026-01-16 16:14:48,364 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-01-16 16:14:48,364 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-01-16 16:14:48,365 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
+2026-01-16 16:14:57,130 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv
+2026-01-16 16:15:39,304 INFO o.a.j.g.a.Start: Stopping test
+2026-01-16 16:15:39,330 INFO o.a.j.t.JMeterThread: Stopping: Users 1-1
+2026-01-16 16:15:39,331 WARN o.a.j.t.JMeterThread: Interrupting: Users 1-1 sampler: Company with Connections - BDO 1% and 15%
+2026-01-16 16:15:39,333 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-1
+2026-01-16 16:15:39,333 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-01-16 16:15:39,333 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv
+2026-01-16 16:15:39,334 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
