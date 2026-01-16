@@ -14,7 +14,7 @@
         <longProp name="timeoutInMs">0</longProp>
       </SyncTimer>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Users" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Users">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
@@ -118,7 +118,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 100 Persons" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 100 Persons"/>
         <hashTree>
           <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
             <stringProp name="ConstantTimer.delay">500</stringProp>
@@ -763,7 +763,7 @@
           <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Director E.1.A" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -809,7 +809,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Director E1A" enabled="true">
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Director E1A">
               <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/E1A/director-e1a.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="variableNames"></stringProp>
@@ -831,7 +831,7 @@
               <intProp name="Assertion.test_type">20</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons" enabled="true"/>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons"/>
             <hashTree>
               <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
                 <stringProp name="ConstantTimer.delay">500</stringProp>
@@ -1177,7 +1177,7 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Spouse of Officer" enabled="true"/>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Spouse Officer E1A" enabled="true">
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Spouse Officer E1A">
               <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/E1A/spouse-officer.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="variableNames"></stringProp>
@@ -1189,7 +1189,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Spouse of Officer" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Spouse of Officer">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -1574,7 +1574,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.B" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.B"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -1585,7 +1585,7 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer">
             <stringProp name="ConstantTimer.delay">500</stringProp>
             <stringProp name="RandomTimer.range">2500</stringProp>
             <stringProp name="TestPlan.comments">most delays will be near average, but will get occasional outliers.</stringProp>
@@ -1593,18 +1593,6 @@
           <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Director E.1.B"/>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Director E1B">
-              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv</stringProp>
-              <stringProp name="fileEncoding">UTF-8</stringProp>
-              <stringProp name="variableNames"></stringProp>
-              <boolProp name="ignoreFirstLine">true</boolProp>
-              <stringProp name="delimiter">,</stringProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">true</boolProp>
-              <boolProp name="stopThread">false</boolProp>
-              <stringProp name="shareMode">shareMode.all</stringProp>
-            </CSVDataSet>
-            <hashTree/>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
@@ -1651,7 +1639,19 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors" enabled="true">
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Director E1B">
+              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/E1A/director-e1a.csv</stringProp>
+              <stringProp name="fileEncoding">UTF-8</stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <boolProp name="ignoreFirstLine">true</boolProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="72221477">&quot;errors&quot;:</stringProp>
               </collectionProp>
@@ -1661,13 +1661,13 @@
               <intProp name="Assertion.test_type">20</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor">
               <stringProp name="JSONPostProcessor.referenceNames"></stringProp>
               <stringProp name="JSONPostProcessor.jsonPathExprs">data.createPerson.id</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons" enabled="true"/>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons"/>
             <hashTree>
               <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
                 <stringProp name="ConstantTimer.delay">500</stringProp>
@@ -1804,18 +1804,6 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Officer E.1.B"/>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Director E1B">
-              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv</stringProp>
-              <stringProp name="fileEncoding">UTF-8</stringProp>
-              <stringProp name="variableNames"></stringProp>
-              <boolProp name="ignoreFirstLine">true</boolProp>
-              <stringProp name="delimiter">,</stringProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">true</boolProp>
-              <boolProp name="stopThread">false</boolProp>
-              <stringProp name="shareMode">shareMode.all</stringProp>
-            </CSVDataSet>
-            <hashTree/>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
@@ -1865,6 +1853,18 @@
                 </collectionProp>
               </elementProp>
             </HTTPSamplerProxy>
+            <hashTree/>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Director E1B">
+              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/E1A/director-e1a.csv</stringProp>
+              <stringProp name="fileEncoding">UTF-8</stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <boolProp name="ignoreFirstLine">true</boolProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+            </CSVDataSet>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors" enabled="true">
               <collectionProp name="Asserion.test_strings">
@@ -2014,7 +2014,7 @@
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Parent of Director"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Parent Director E1B">
-              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/spouse-director.csv</stringProp>
+              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/E1A/spouse-director.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="variableNames"></stringProp>
               <boolProp name="ignoreFirstLine">true</boolProp>
@@ -2025,7 +2025,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parent of Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parent of Director">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -2070,211 +2070,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="72221477">&quot;errors&quot;:</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">20</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons"/>
-            <hashTree>
-              <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
-                <stringProp name="ConstantTimer.delay">500</stringProp>
-                <stringProp name="RandomTimer.range">2500</stringProp>
-                <stringProp name="TestPlan.comments">most delays will be near average, but will get occasional outliers.</stringProp>
-              </GaussianRandomTimer>
-              <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="List 10 Persons">
-                <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
-                <stringProp name="HTTPSampler.protocol">https</stringProp>
-                <stringProp name="HTTPSampler.path">/admin/query</stringProp>
-                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-                <stringProp name="HTTPSampler.method">POST</stringProp>
-                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                  <collectionProp name="Arguments.arguments">
-                    <elementProp name="" elementType="HTTPArgument">
-                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">{&#xd;
-  &quot;query&quot;: &quot;query listPersons($max: Int!, $offset: Int!, $sort: String!) {\n  persons(opts: {max: $max, offset: $offset, sort: $sort}) {\n    total\n    data {\n      ... on Person {\n        id\n        firstName\n        middleName\n        lastName\n        birthday\n        tin\n        logicalBranchCode\n        rpTag {\n          code\n          description\n          __typename\n        }\n        rpLastUpdated\n        created\n        updated\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;,&#xd;
-  &quot;variables&quot;: {&#xd;
-    &quot;max&quot;: 10,&#xd;
-    &quot;offset&quot;: 0,&#xd;
-    &quot;sort&quot;: &quot;id:asc&quot;&#xd;
-  }&#xd;
-}</stringProp>
-                      <stringProp name="Argument.metadata">=</stringProp>
-                    </elementProp>
-                  </collectionProp>
-                </elementProp>
-              </HTTPSamplerProxy>
-              <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                  <collectionProp name="HeaderManager.headers">
-                    <elementProp name="" elementType="Header">
-                      <stringProp name="Header.name">Authorization</stringProp>
-                      <stringProp name="Header.value">Bearer ${jwt}</stringProp>
-                    </elementProp>
-                  </collectionProp>
-                </HeaderManager>
-                <hashTree/>
-                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check if data is present" enabled="true">
-                  <stringProp name="JSON_PATH">data.persons.data</stringProp>
-                  <stringProp name="EXPECTED_VALUE"></stringProp>
-                  <boolProp name="JSONVALIDATION">false</boolProp>
-                  <boolProp name="EXPECT_NULL">false</boolProp>
-                  <boolProp name="INVERT">false</boolProp>
-                  <boolProp name="ISREGEX">false</boolProp>
-                </JSONPathAssertion>
-                <hashTree/>
-                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Store 100 Persons in Environment" enabled="true">
-                  <stringProp name="JSONPostProcessor.referenceNames">persons</stringProp>
-                  <stringProp name="JSONPostProcessor.jsonPathExprs">data.persons.data</stringProp>
-                  <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-                </JSONPostProcessor>
-                <hashTree/>
-                <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-                  <boolProp name="ResultCollector.error_logging">false</boolProp>
-                  <objProp>
-                    <name>saveConfig</name>
-                    <value class="SampleSaveConfiguration">
-                      <time>true</time>
-                      <latency>true</latency>
-                      <timestamp>true</timestamp>
-                      <success>true</success>
-                      <label>true</label>
-                      <code>true</code>
-                      <message>true</message>
-                      <threadName>true</threadName>
-                      <dataType>true</dataType>
-                      <encoding>false</encoding>
-                      <assertions>true</assertions>
-                      <subresults>true</subresults>
-                      <responseData>false</responseData>
-                      <samplerData>false</samplerData>
-                      <xml>false</xml>
-                      <fieldNames>true</fieldNames>
-                      <responseHeaders>false</responseHeaders>
-                      <requestHeaders>false</requestHeaders>
-                      <responseDataOnError>false</responseDataOnError>
-                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                      <assertionsResultsToSave>0</assertionsResultsToSave>
-                      <bytes>true</bytes>
-                      <sentBytes>true</sentBytes>
-                      <url>true</url>
-                      <threadCounts>true</threadCounts>
-                      <idleTime>true</idleTime>
-                      <connectTime>true</connectTime>
-                    </value>
-                  </objProp>
-                  <stringProp name="filename"></stringProp>
-                </ResultCollector>
-                <hashTree/>
-                <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
-                  <boolProp name="ResultCollector.error_logging">false</boolProp>
-                  <objProp>
-                    <name>saveConfig</name>
-                    <value class="SampleSaveConfiguration">
-                      <time>true</time>
-                      <latency>true</latency>
-                      <timestamp>true</timestamp>
-                      <success>true</success>
-                      <label>true</label>
-                      <code>true</code>
-                      <message>true</message>
-                      <threadName>true</threadName>
-                      <dataType>true</dataType>
-                      <encoding>false</encoding>
-                      <assertions>true</assertions>
-                      <subresults>true</subresults>
-                      <responseData>false</responseData>
-                      <samplerData>false</samplerData>
-                      <xml>false</xml>
-                      <fieldNames>true</fieldNames>
-                      <responseHeaders>false</responseHeaders>
-                      <requestHeaders>false</requestHeaders>
-                      <responseDataOnError>false</responseDataOnError>
-                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                      <assertionsResultsToSave>0</assertionsResultsToSave>
-                      <bytes>true</bytes>
-                      <sentBytes>true</sentBytes>
-                      <url>true</url>
-                      <threadCounts>true</threadCounts>
-                      <idleTime>true</idleTime>
-                      <connectTime>true</connectTime>
-                    </value>
-                  </objProp>
-                  <stringProp name="filename"></stringProp>
-                </ResultCollector>
-                <hashTree/>
-              </hashTree>
-            </hashTree>
-          </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Parent of Officer"/>
-          <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Parent Officer E1B">
-              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/spouse-officer.csv</stringProp>
-              <stringProp name="fileEncoding">UTF-8</stringProp>
-              <stringProp name="variableNames"></stringProp>
-              <boolProp name="ignoreFirstLine">true</boolProp>
-              <stringProp name="delimiter">,</stringProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">true</boolProp>
-              <boolProp name="stopThread">false</boolProp>
-              <stringProp name="shareMode">shareMode.all</stringProp>
-            </CSVDataSet>
-            <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parent of Officer">
-              <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/admin/query</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&#xd;
-    &quot;operationName&quot;: &quot;createPerson&quot;,&#xd;
-    &quot;variables&quot;: {&#xd;
-        &quot;firstName&quot;: &quot;${firstName}_${__time(HHmmss)}&quot;,&#xd;
-        &quot;middleName&quot;: null,&#xd;
-        &quot;lastName&quot;: &quot;${lastName}_${__time(HHmmss)}&quot;,&#xd;
-        &quot;birthday&quot;:${birthday},&#xd;
-        &quot;remarks&quot;: &quot;${remarks}&quot;,&#xd;
-        &quot;tin&quot;: null,&#xd;
-        &quot;cif&quot;: null,&#xd;
-        &quot;logicalBranchCode&quot;: null,&#xd;
-        &quot;relationships&quot;: [&#xd;
-            {&#xd;
-                &quot;destination&quot;: &quot;cc9f4046-09c4-4219-a1ce-f9a90a66761a&quot;,&#xd;
-                &quot;relationship&quot;: &quot;e6bf1d98-6c8b-41d6-b198-48792598e4e4&quot;,&#xd;
-                &quot;attributes&quot;: [&#xd;
-                    {&#xd;
-                        &quot;key&quot;: &quot;type&quot;,&#xd;
-                        &quot;stringValue&quot;: &quot;Consanguine&quot;&#xd;
-                    }&#xd;
-                ]&#xd;
-            }&#xd;
-        ],&#xd;
-        &quot;isRelatedParty&quot;: false&#xd;
-    },&#xd;
-    &quot;query&quot;: &quot;mutation createPerson($firstName: String!, $middleName: String, $lastName: String!, $birthday: Long, $remarks: String, $tin: String, $cif: String, $logicalBranchCode: String, $relationships: [CreateCustomerRelationship], $isRelatedParty: Boolean!) {\n  createPerson(\n    input: {firstName: $firstName, middleName: $middleName, lastName: $lastName, birthday: $birthday, remarks: $remarks, tin: $tin, cif: $cif, logicalBranchCode: $logicalBranchCode, relationships: $relationships, isRelatedParty: $isRelatedParty}\n  ) {\n    id\n    firstName\n    middleName\n    lastName\n    birthday\n    remarks\n    rpClassification {\n      code\n      description\n      __typename\n    }\n    rpTag {\n      code\n      description\n      __typename\n    }\n    tin\n    cif\n    logicalBranchCode\n    isRelatedParty\n    created\n    updated\n    relationships {\n      destination {\n        ... on Person {\n          firstName\n          lastName\n          __typename\n        }\n        __typename\n      }\n      relationship {\n        description\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
-}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-            </HTTPSamplerProxy>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="72221477">&quot;errors&quot;:</stringProp>
               </collectionProp>
@@ -2419,28 +2215,10 @@
               </hashTree>
             </hashTree>
           </hashTree>
-        </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.4"/>
-        <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer ${jwt}</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
-            <stringProp name="ConstantTimer.delay">500</stringProp>
-            <stringProp name="RandomTimer.range">2500</stringProp>
-            <stringProp name="TestPlan.comments">most delays will be near average, but will get occasional outliers.</stringProp>
-          </GaussianRandomTimer>
-          <hashTree/>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Director E.4"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Parent of Officer"/>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Director E4">
-              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv</stringProp>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Parent Officer E1B">
+              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/E1A/spouse-officer.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="variableNames"></stringProp>
               <boolProp name="ignoreFirstLine">true</boolProp>
@@ -2451,8 +2229,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create - Director">
-              <stringProp name="TestPlan.comments">E1A-Director</stringProp>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parent of Officer">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -2471,551 +2248,25 @@
         &quot;middleName&quot;: null,&#xd;
         &quot;lastName&quot;: &quot;${lastName}_${__time(HHmmss)}&quot;,&#xd;
         &quot;birthday&quot;:${birthday},&#xd;
-        &quot;remarks&quot;: &quot;${remarks}_${__time(HHmmss)}&quot;,&#xd;
-        &quot;tin&quot;: null,&#xd;
-        &quot;cif&quot;: null,&#xd;
-        &quot;logicalBranchCode&quot;: null,&#xd;
-        &quot;relationships&quot;: [&#xd;
-            {&#xd;
-                &quot;destination&quot;: &quot;3c421138-685c-460a-b872-90fc460d4255&quot;,&#xd;
-                &quot;relationship&quot;: &quot;e869c4d8-d4ca-426d-9a67-a4348850d349&quot;,&#xd;
-                &quot;attributes&quot;: [&#xd;
-                    {&#xd;
-                        &quot;key&quot;: &quot;type&quot;,&#xd;
-                        &quot;stringValue&quot;: &quot;Executive&quot;&#xd;
-                    }&#xd;
-                ]&#xd;
-            }&#xd;
-        ],&#xd;
-        &quot;isRelatedParty&quot;: false&#xd;
-    },&#xd;
-    &quot;query&quot;: &quot;mutation createPerson($firstName: String!, $middleName: String, $lastName: String!, $birthday: Long, $remarks: String, $tin: String, $cif: String, $logicalBranchCode: String, $relationships: [CreateCustomerRelationship], $isRelatedParty: Boolean!) {\n  createPerson(\n    input: {firstName: $firstName, middleName: $middleName, lastName: $lastName, birthday: $birthday, remarks: $remarks, tin: $tin, cif: $cif, logicalBranchCode: $logicalBranchCode, relationships: $relationships, isRelatedParty: $isRelatedParty}\n  ) {\n    id\n    firstName\n    middleName\n    lastName\n    birthday\n    remarks\n    rpClassification {\n      code\n      description\n      __typename\n    }\n    rpTag {\n      code\n      description\n      __typename\n    }\n    tin\n    cif\n    logicalBranchCode\n    isRelatedParty\n    created\n    updated\n    relationships {\n      destination {\n        ... on Person {\n          firstName\n          lastName\n          __typename\n        }\n        __typename\n      }\n      relationship {\n        description\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
-}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Search Load -Director  First Name">
-                <stringProp name="JSONPostProcessor.referenceNames">e4DirectorFName</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">data.createPerson.firstName</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-              </JSONPostProcessor>
-              <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Search Load - Director Last Name">
-                <stringProp name="JSONPostProcessor.referenceNames">e4DirectorLName</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">data.createPerson.lastName</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-              </JSONPostProcessor>
-              <hashTree/>
-            </hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="72221477">&quot;errors&quot;:</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">20</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search - Director">
-              <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/admin/query</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&#xd;
-    &quot;operationName&quot;: &quot;searchPerson&quot;,&#xd;
-    &quot;variables&quot;: {&#xd;
-        &quot;firstName&quot;: &quot;${e4DirectorFName}&quot;,&#xd;
-        &quot;middleName&quot;: null,&#xd;
-        &quot;lastName&quot;: &quot;${e4DirectorLName}&quot;,&#xd;
-        &quot;birthday&quot;: null,&#xd;
-        &quot;tin&quot;: null,&#xd;
-        &quot;max&quot;: 20,&#xd;
-        &quot;offset&quot;: 0,&#xd;
-        &quot;sort&quot;: &quot;id:asc&quot;&#xd;
-    },&#xd;
-    &quot;query&quot;: &quot;query searchPerson($firstName: String!, $middleName: String, $lastName: String!, $birthday: Long, $tin: String, $max: Int!, $offset: Int!, $sort: String!) {\n  searchPerson(\n    input: {firstName: $firstName, middleName: $middleName, lastName: $lastName, birthday: $birthday, tin: $tin}\n    opts: {max: $max, offset: $offset, sort: $sort}\n  ) {\n    id\n    firstName\n    middleName\n    lastName\n    birthday\n    remarks\n    rpClassification {\n      code\n      description\n      __typename\n    }\n    rpTag {\n      code\n      description\n      __typename\n    }\n    tin\n    cif\n    logicalBranchCode\n    ocsTag\n    icbsTag\n    essTag\n    rpLastUpdated\n    created\n    updated\n    relationships {\n      id\n      destination {\n        ... on Person {\n          id\n          firstName\n          middleName\n          lastName\n          __typename\n        }\n        ... on Company {\n          id\n          name\n          businessType\n          __typename\n        }\n        __typename\n      }\n      relationship {\n        id\n        code\n        description\n        __typename\n      }\n      attributes {\n        ... on BooleanRelAttr {\n          key\n          booleanValue\n          __typename\n        }\n        ... on DateTimeRelAttr {\n          key\n          dateTimeValue\n          __typename\n        }\n        ... on NumberRelAttr {\n          key\n          numberValue\n          __typename\n        }\n        ... on StringRelAttr {\n          key\n          stringValue\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
-}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Director ID">
-                <stringProp name="JSONPostProcessor.referenceNames">directorId</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">data.searchPerson[0].id</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-              </JSONPostProcessor>
-              <hashTree/>
-            </hashTree>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons"/>
-            <hashTree>
-              <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
-                <stringProp name="ConstantTimer.delay">500</stringProp>
-                <stringProp name="RandomTimer.range">2500</stringProp>
-                <stringProp name="TestPlan.comments">most delays will be near average, but will get occasional outliers.</stringProp>
-              </GaussianRandomTimer>
-              <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="List 10 Persons" enabled="true">
-                <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
-                <stringProp name="HTTPSampler.protocol">https</stringProp>
-                <stringProp name="HTTPSampler.path">/admin/query</stringProp>
-                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-                <stringProp name="HTTPSampler.method">POST</stringProp>
-                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                  <collectionProp name="Arguments.arguments">
-                    <elementProp name="" elementType="HTTPArgument">
-                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">{&#xd;
-  &quot;query&quot;: &quot;query listPersons($max: Int!, $offset: Int!, $sort: String!) {\n  persons(opts: {max: $max, offset: $offset, sort: $sort}) {\n    total\n    data {\n      ... on Person {\n        id\n        firstName\n        middleName\n        lastName\n        birthday\n        tin\n        logicalBranchCode\n        rpTag {\n          code\n          description\n          __typename\n        }\n        rpLastUpdated\n        created\n        updated\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;,&#xd;
-  &quot;variables&quot;: {&#xd;
-    &quot;max&quot;: 10,&#xd;
-    &quot;offset&quot;: 0,&#xd;
-    &quot;sort&quot;: &quot;id:asc&quot;&#xd;
-  }&#xd;
-}</stringProp>
-                      <stringProp name="Argument.metadata">=</stringProp>
-                    </elementProp>
-                  </collectionProp>
-                </elementProp>
-              </HTTPSamplerProxy>
-              <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                  <collectionProp name="HeaderManager.headers">
-                    <elementProp name="" elementType="Header">
-                      <stringProp name="Header.name">Authorization</stringProp>
-                      <stringProp name="Header.value">Bearer ${jwt}</stringProp>
-                    </elementProp>
-                  </collectionProp>
-                </HeaderManager>
-                <hashTree/>
-                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check if data is present" enabled="true">
-                  <stringProp name="JSON_PATH">data.persons.data</stringProp>
-                  <stringProp name="EXPECTED_VALUE"></stringProp>
-                  <boolProp name="JSONVALIDATION">false</boolProp>
-                  <boolProp name="EXPECT_NULL">false</boolProp>
-                  <boolProp name="INVERT">false</boolProp>
-                  <boolProp name="ISREGEX">false</boolProp>
-                </JSONPathAssertion>
-                <hashTree/>
-                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Store 100 Persons in Environment" enabled="true">
-                  <stringProp name="JSONPostProcessor.referenceNames">persons</stringProp>
-                  <stringProp name="JSONPostProcessor.jsonPathExprs">data.persons.data</stringProp>
-                  <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-                </JSONPostProcessor>
-                <hashTree/>
-                <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-                  <boolProp name="ResultCollector.error_logging">false</boolProp>
-                  <objProp>
-                    <name>saveConfig</name>
-                    <value class="SampleSaveConfiguration">
-                      <time>true</time>
-                      <latency>true</latency>
-                      <timestamp>true</timestamp>
-                      <success>true</success>
-                      <label>true</label>
-                      <code>true</code>
-                      <message>true</message>
-                      <threadName>true</threadName>
-                      <dataType>true</dataType>
-                      <encoding>false</encoding>
-                      <assertions>true</assertions>
-                      <subresults>true</subresults>
-                      <responseData>false</responseData>
-                      <samplerData>false</samplerData>
-                      <xml>false</xml>
-                      <fieldNames>true</fieldNames>
-                      <responseHeaders>false</responseHeaders>
-                      <requestHeaders>false</requestHeaders>
-                      <responseDataOnError>false</responseDataOnError>
-                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                      <assertionsResultsToSave>0</assertionsResultsToSave>
-                      <bytes>true</bytes>
-                      <sentBytes>true</sentBytes>
-                      <url>true</url>
-                      <threadCounts>true</threadCounts>
-                      <idleTime>true</idleTime>
-                      <connectTime>true</connectTime>
-                    </value>
-                  </objProp>
-                  <stringProp name="filename"></stringProp>
-                </ResultCollector>
-                <hashTree/>
-                <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
-                  <boolProp name="ResultCollector.error_logging">false</boolProp>
-                  <objProp>
-                    <name>saveConfig</name>
-                    <value class="SampleSaveConfiguration">
-                      <time>true</time>
-                      <latency>true</latency>
-                      <timestamp>true</timestamp>
-                      <success>true</success>
-                      <label>true</label>
-                      <code>true</code>
-                      <message>true</message>
-                      <threadName>true</threadName>
-                      <dataType>true</dataType>
-                      <encoding>false</encoding>
-                      <assertions>true</assertions>
-                      <subresults>true</subresults>
-                      <responseData>false</responseData>
-                      <samplerData>false</samplerData>
-                      <xml>false</xml>
-                      <fieldNames>true</fieldNames>
-                      <responseHeaders>false</responseHeaders>
-                      <requestHeaders>false</requestHeaders>
-                      <responseDataOnError>false</responseDataOnError>
-                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                      <assertionsResultsToSave>0</assertionsResultsToSave>
-                      <bytes>true</bytes>
-                      <sentBytes>true</sentBytes>
-                      <url>true</url>
-                      <threadCounts>true</threadCounts>
-                      <idleTime>true</idleTime>
-                      <connectTime>true</connectTime>
-                    </value>
-                  </objProp>
-                  <stringProp name="filename"></stringProp>
-                </ResultCollector>
-                <hashTree/>
-              </hashTree>
-            </hashTree>
-          </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Officer E.4"/>
-          <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Officer E4">
-              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv</stringProp>
-              <stringProp name="fileEncoding">UTF-8</stringProp>
-              <stringProp name="variableNames"></stringProp>
-              <boolProp name="ignoreFirstLine">true</boolProp>
-              <stringProp name="delimiter">,</stringProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">true</boolProp>
-              <boolProp name="stopThread">false</boolProp>
-              <stringProp name="shareMode">shareMode.all</stringProp>
-            </CSVDataSet>
-            <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create - Officer">
-              <stringProp name="TestPlan.comments">E1A-Director</stringProp>
-              <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/admin/query</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&#xd;
-    &quot;operationName&quot;: &quot;createPerson&quot;,&#xd;
-    &quot;variables&quot;: {&#xd;
-        &quot;firstName&quot;: &quot;${firstName}_${__time(HHmmss)}&quot;,&#xd;
-        &quot;middleName&quot;: null,&#xd;
-        &quot;lastName&quot;: &quot;${lastName}_${__time(HHmmss)}&quot;,&#xd;
-        &quot;birthday&quot;:${birthday},&#xd;
-        &quot;remarks&quot;: &quot;${remarks}_${__time(HHmmss)}&quot;,&#xd;
-        &quot;tin&quot;: null,&#xd;
-        &quot;cif&quot;: null,&#xd;
-        &quot;logicalBranchCode&quot;: null,&#xd;
-        &quot;relationships&quot;: [&#xd;
-            {&#xd;
-                &quot;destination&quot;: &quot;3c421138-685c-460a-b872-90fc460d4255&quot;,&#xd;
-                &quot;relationship&quot;: &quot;001e8386-7454-4511-baba-2b0aed3c2ab0&quot;,&#xd;
-                &quot;attributes&quot;: [&#xd;
-                    {&#xd;
-                        &quot;key&quot;: &quot;type&quot;,&#xd;
-                        &quot;stringValue&quot;: &quot;President&quot;&#xd;
-                    },&#xd;
-                    {&#xd;
-                        &quot;key&quot;: &quot;isSVP&quot;,&#xd;
-                        &quot;booleanValue&quot;: false&#xd;
-                    }&#xd;
-                ]&#xd;
-            }&#xd;
-        ],&#xd;
-        &quot;isRelatedParty&quot;: false&#xd;
-    },&#xd;
-    &quot;query&quot;: &quot;mutation createPerson($firstName: String!, $middleName: String, $lastName: String!, $birthday: Long, $remarks: String, $tin: String, $cif: String, $logicalBranchCode: String, $relationships: [CreateCustomerRelationship], $isRelatedParty: Boolean!) {\n  createPerson(\n    input: {firstName: $firstName, middleName: $middleName, lastName: $lastName, birthday: $birthday, remarks: $remarks, tin: $tin, cif: $cif, logicalBranchCode: $logicalBranchCode, relationships: $relationships, isRelatedParty: $isRelatedParty}\n  ) {\n    id\n    firstName\n    middleName\n    lastName\n    birthday\n    remarks\n    rpClassification {\n      code\n      description\n      __typename\n    }\n    rpTag {\n      code\n      description\n      __typename\n    }\n    tin\n    cif\n    logicalBranchCode\n    isRelatedParty\n    created\n    updated\n    relationships {\n      destination {\n        ... on Person {\n          firstName\n          lastName\n          __typename\n        }\n        __typename\n      }\n      relationship {\n        description\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
-}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Search Load - Officer First Name">
-                <stringProp name="JSONPostProcessor.referenceNames">e4OfficerFName</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">data.createPerson.firstName</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-              </JSONPostProcessor>
-              <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Search Load -Officer  Last Name">
-                <stringProp name="JSONPostProcessor.referenceNames">e4OfficerLName</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">data.createPerson.lastName</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-              </JSONPostProcessor>
-              <hashTree/>
-            </hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="72221477">&quot;errors&quot;:</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">20</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search - Officer">
-              <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/admin/query</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&#xd;
-    &quot;operationName&quot;: &quot;searchPerson&quot;,&#xd;
-    &quot;variables&quot;: {&#xd;
-        &quot;firstName&quot;: &quot;${e4OfficerFName}&quot;,&#xd;
-        &quot;middleName&quot;: null,&#xd;
-        &quot;lastName&quot;: &quot;${e4OfficerLName}&quot;,&#xd;
-        &quot;birthday&quot;: null,&#xd;
-        &quot;tin&quot;: null,&#xd;
-        &quot;max&quot;: 20,&#xd;
-        &quot;offset&quot;: 0,&#xd;
-        &quot;sort&quot;: &quot;id:asc&quot;&#xd;
-    },&#xd;
-    &quot;query&quot;: &quot;query searchPerson($firstName: String!, $middleName: String, $lastName: String!, $birthday: Long, $tin: String, $max: Int!, $offset: Int!, $sort: String!) {\n  searchPerson(\n    input: {firstName: $firstName, middleName: $middleName, lastName: $lastName, birthday: $birthday, tin: $tin}\n    opts: {max: $max, offset: $offset, sort: $sort}\n  ) {\n    id\n    firstName\n    middleName\n    lastName\n    birthday\n    remarks\n    rpClassification {\n      code\n      description\n      __typename\n    }\n    rpTag {\n      code\n      description\n      __typename\n    }\n    tin\n    cif\n    logicalBranchCode\n    ocsTag\n    icbsTag\n    essTag\n    rpLastUpdated\n    created\n    updated\n    relationships {\n      id\n      destination {\n        ... on Person {\n          id\n          firstName\n          middleName\n          lastName\n          __typename\n        }\n        ... on Company {\n          id\n          name\n          businessType\n          __typename\n        }\n        __typename\n      }\n      relationship {\n        id\n        code\n        description\n        __typename\n      }\n      attributes {\n        ... on BooleanRelAttr {\n          key\n          booleanValue\n          __typename\n        }\n        ... on DateTimeRelAttr {\n          key\n          dateTimeValue\n          __typename\n        }\n        ... on NumberRelAttr {\n          key\n          numberValue\n          __typename\n        }\n        ... on StringRelAttr {\n          key\n          stringValue\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
-}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Director ID">
-                <stringProp name="JSONPostProcessor.referenceNames">officerId</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">data.searchPerson[0].id</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-              </JSONPostProcessor>
-              <hashTree/>
-            </hashTree>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons"/>
-            <hashTree>
-              <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
-                <stringProp name="ConstantTimer.delay">500</stringProp>
-                <stringProp name="RandomTimer.range">2500</stringProp>
-                <stringProp name="TestPlan.comments">most delays will be near average, but will get occasional outliers.</stringProp>
-              </GaussianRandomTimer>
-              <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="List 10 Persons" enabled="true">
-                <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
-                <stringProp name="HTTPSampler.protocol">https</stringProp>
-                <stringProp name="HTTPSampler.path">/admin/query</stringProp>
-                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-                <stringProp name="HTTPSampler.method">POST</stringProp>
-                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                  <collectionProp name="Arguments.arguments">
-                    <elementProp name="" elementType="HTTPArgument">
-                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">{&#xd;
-  &quot;query&quot;: &quot;query listPersons($max: Int!, $offset: Int!, $sort: String!) {\n  persons(opts: {max: $max, offset: $offset, sort: $sort}) {\n    total\n    data {\n      ... on Person {\n        id\n        firstName\n        middleName\n        lastName\n        birthday\n        tin\n        logicalBranchCode\n        rpTag {\n          code\n          description\n          __typename\n        }\n        rpLastUpdated\n        created\n        updated\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;,&#xd;
-  &quot;variables&quot;: {&#xd;
-    &quot;max&quot;: 10,&#xd;
-    &quot;offset&quot;: 0,&#xd;
-    &quot;sort&quot;: &quot;id:asc&quot;&#xd;
-  }&#xd;
-}</stringProp>
-                      <stringProp name="Argument.metadata">=</stringProp>
-                    </elementProp>
-                  </collectionProp>
-                </elementProp>
-              </HTTPSamplerProxy>
-              <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                  <collectionProp name="HeaderManager.headers">
-                    <elementProp name="" elementType="Header">
-                      <stringProp name="Header.name">Authorization</stringProp>
-                      <stringProp name="Header.value">Bearer ${jwt}</stringProp>
-                    </elementProp>
-                  </collectionProp>
-                </HeaderManager>
-                <hashTree/>
-                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check if data is present" enabled="true">
-                  <stringProp name="JSON_PATH">data.persons.data</stringProp>
-                  <stringProp name="EXPECTED_VALUE"></stringProp>
-                  <boolProp name="JSONVALIDATION">false</boolProp>
-                  <boolProp name="EXPECT_NULL">false</boolProp>
-                  <boolProp name="INVERT">false</boolProp>
-                  <boolProp name="ISREGEX">false</boolProp>
-                </JSONPathAssertion>
-                <hashTree/>
-                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Store 100 Persons in Environment" enabled="true">
-                  <stringProp name="JSONPostProcessor.referenceNames">persons</stringProp>
-                  <stringProp name="JSONPostProcessor.jsonPathExprs">data.persons.data</stringProp>
-                  <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-                </JSONPostProcessor>
-                <hashTree/>
-                <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-                  <boolProp name="ResultCollector.error_logging">false</boolProp>
-                  <objProp>
-                    <name>saveConfig</name>
-                    <value class="SampleSaveConfiguration">
-                      <time>true</time>
-                      <latency>true</latency>
-                      <timestamp>true</timestamp>
-                      <success>true</success>
-                      <label>true</label>
-                      <code>true</code>
-                      <message>true</message>
-                      <threadName>true</threadName>
-                      <dataType>true</dataType>
-                      <encoding>false</encoding>
-                      <assertions>true</assertions>
-                      <subresults>true</subresults>
-                      <responseData>false</responseData>
-                      <samplerData>false</samplerData>
-                      <xml>false</xml>
-                      <fieldNames>true</fieldNames>
-                      <responseHeaders>false</responseHeaders>
-                      <requestHeaders>false</requestHeaders>
-                      <responseDataOnError>false</responseDataOnError>
-                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                      <assertionsResultsToSave>0</assertionsResultsToSave>
-                      <bytes>true</bytes>
-                      <sentBytes>true</sentBytes>
-                      <url>true</url>
-                      <threadCounts>true</threadCounts>
-                      <idleTime>true</idleTime>
-                      <connectTime>true</connectTime>
-                    </value>
-                  </objProp>
-                  <stringProp name="filename"></stringProp>
-                </ResultCollector>
-                <hashTree/>
-                <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
-                  <boolProp name="ResultCollector.error_logging">false</boolProp>
-                  <objProp>
-                    <name>saveConfig</name>
-                    <value class="SampleSaveConfiguration">
-                      <time>true</time>
-                      <latency>true</latency>
-                      <timestamp>true</timestamp>
-                      <success>true</success>
-                      <label>true</label>
-                      <code>true</code>
-                      <message>true</message>
-                      <threadName>true</threadName>
-                      <dataType>true</dataType>
-                      <encoding>false</encoding>
-                      <assertions>true</assertions>
-                      <subresults>true</subresults>
-                      <responseData>false</responseData>
-                      <samplerData>false</samplerData>
-                      <xml>false</xml>
-                      <fieldNames>true</fieldNames>
-                      <responseHeaders>false</responseHeaders>
-                      <requestHeaders>false</requestHeaders>
-                      <responseDataOnError>false</responseDataOnError>
-                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                      <assertionsResultsToSave>0</assertionsResultsToSave>
-                      <bytes>true</bytes>
-                      <sentBytes>true</sentBytes>
-                      <url>true</url>
-                      <threadCounts>true</threadCounts>
-                      <idleTime>true</idleTime>
-                      <connectTime>true</connectTime>
-                    </value>
-                  </objProp>
-                  <stringProp name="filename"></stringProp>
-                </ResultCollector>
-                <hashTree/>
-              </hashTree>
-            </hashTree>
-          </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create a company with connections - Director"/>
-          <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company with Connections">
-              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv</stringProp>
-              <stringProp name="fileEncoding">UTF-8</stringProp>
-              <stringProp name="variableNames"></stringProp>
-              <boolProp name="ignoreFirstLine">true</boolProp>
-              <stringProp name="delimiter">,</stringProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">true</boolProp>
-              <boolProp name="stopThread">false</boolProp>
-              <stringProp name="shareMode">shareMode.all</stringProp>
-            </CSVDataSet>
-            <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections - Director">
-              <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/admin/query</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&#xd;
-    &quot;operationName&quot;: &quot;createCompany&quot;,&#xd;
-    &quot;variables&quot;: {&#xd;
-        &quot;name&quot;: &quot;${companyName}_${__time(HHmmss)}&quot;,&#xd;
-        &quot;tin&quot;: null,&#xd;
-        &quot;cif&quot;: null,&#xd;
-        &quot;birthday&quot;: &quot;${birthday}&quot;,&#xd;
-        &quot;isNGORetailFinance&quot;: false,&#xd;
-        &quot;logicalBranchCode&quot;: null,&#xd;
-        &quot;businessType&quot;: &quot;${businessType}&quot;,&#xd;
         &quot;remarks&quot;: &quot;${remarks}&quot;,&#xd;
+        &quot;tin&quot;: null,&#xd;
+        &quot;cif&quot;: null,&#xd;
+        &quot;logicalBranchCode&quot;: null,&#xd;
         &quot;relationships&quot;: [&#xd;
             {&#xd;
-                &quot;source&quot;: &quot;${directorId}&quot;,&#xd;
-                &quot;relationship&quot;: &quot;a9f29a0c-e851-498e-9ff1-b08b68ed5549&quot;,&#xd;
+                &quot;destination&quot;: &quot;cc9f4046-09c4-4219-a1ce-f9a90a66761a&quot;,&#xd;
+                &quot;relationship&quot;: &quot;e6bf1d98-6c8b-41d6-b198-48792598e4e4&quot;,&#xd;
                 &quot;attributes&quot;: [&#xd;
                     {&#xd;
                         &quot;key&quot;: &quot;type&quot;,&#xd;
-                        &quot;stringValue&quot;: &quot;PERCENTAGE&quot;&#xd;
-                    },&#xd;
-                    {&#xd;
-                        &quot;key&quot;: &quot;subscribedCapitalStock&quot;,&#xd;
-                        &quot;numberValue&quot;: 21&#xd;
-                    },&#xd;
-                    {&#xd;
-                        &quot;key&quot;: &quot;outstandingVotingStock&quot;,&#xd;
-                        &quot;numberValue&quot;: 21&#xd;
+                        &quot;stringValue&quot;: &quot;Consanguine&quot;&#xd;
                     }&#xd;
                 ]&#xd;
             }&#xd;
         ],&#xd;
-        &quot;aliases&quot;: [],&#xd;
         &quot;isRelatedParty&quot;: false&#xd;
     },&#xd;
-    &quot;query&quot;: &quot;mutation createCompany($name: String!, $tin: String, $cif: String, $logicalBranchCode: String, $businessType: BusinessType!, $birthday: Long, $remarks: String, $isNGORetailFinance: Boolean, $relationships: [CreateCustomerRelationship], $aliases: [CreateAliasesRequest], $isRelatedParty: Boolean!) {\n  createCompany(\n    input: {name: $name, tin: $tin, cif: $cif, logicalBranchCode: $logicalBranchCode, businessType: $businessType, birthday: $birthday, remarks: $remarks, isNGORetailFinance: $isNGORetailFinance, relationships: $relationships, aliases: $aliases, isRelatedParty: $isRelatedParty}\n  ) {\n    id\n    name\n    birthday\n    businessType\n    remarks\n    logicalBranchCode\n    isRelatedParty\n    tin\n    cif\n    created\n    updated\n    isNGORetailFinance\n    relationships {\n      destination {\n        ... on Person {\n          firstName\n          middleName\n          lastName\n          __typename\n        }\n        ... on Company {\n          name\n          __typename\n        }\n        __typename\n      }\n      relationship {\n        description\n        __typename\n      }\n      __typename\n    }\n    aliases {\n      ... on Alias {\n        id\n        name\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
+    &quot;query&quot;: &quot;mutation createPerson($firstName: String!, $middleName: String, $lastName: String!, $birthday: Long, $remarks: String, $tin: String, $cif: String, $logicalBranchCode: String, $relationships: [CreateCustomerRelationship], $isRelatedParty: Boolean!) {\n  createPerson(\n    input: {firstName: $firstName, middleName: $middleName, lastName: $lastName, birthday: $birthday, remarks: $remarks, tin: $tin, cif: $cif, logicalBranchCode: $logicalBranchCode, relationships: $relationships, isRelatedParty: $isRelatedParty}\n  ) {\n    id\n    firstName\n    middleName\n    lastName\n    birthday\n    remarks\n    rpClassification {\n      code\n      description\n      __typename\n    }\n    rpTag {\n      code\n      description\n      __typename\n    }\n    tin\n    cif\n    logicalBranchCode\n    isRelatedParty\n    created\n    updated\n    relationships {\n      destination {\n        ... on Person {\n          firstName\n          lastName\n          __typename\n        }\n        __typename\n      }\n      relationship {\n        description\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -3033,220 +2284,7 @@
               <intProp name="Assertion.test_type">20</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons"/>
-            <hashTree>
-              <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
-                <stringProp name="ConstantTimer.delay">500</stringProp>
-                <stringProp name="RandomTimer.range">2500</stringProp>
-                <stringProp name="TestPlan.comments">most delays will be near average, but will get occasional outliers.</stringProp>
-              </GaussianRandomTimer>
-              <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="List 10 Persons" enabled="true">
-                <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
-                <stringProp name="HTTPSampler.protocol">https</stringProp>
-                <stringProp name="HTTPSampler.path">/admin/query</stringProp>
-                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-                <stringProp name="HTTPSampler.method">POST</stringProp>
-                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                  <collectionProp name="Arguments.arguments">
-                    <elementProp name="" elementType="HTTPArgument">
-                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">{&#xd;
-  &quot;query&quot;: &quot;query listPersons($max: Int!, $offset: Int!, $sort: String!) {\n  persons(opts: {max: $max, offset: $offset, sort: $sort}) {\n    total\n    data {\n      ... on Person {\n        id\n        firstName\n        middleName\n        lastName\n        birthday\n        tin\n        logicalBranchCode\n        rpTag {\n          code\n          description\n          __typename\n        }\n        rpLastUpdated\n        created\n        updated\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;,&#xd;
-  &quot;variables&quot;: {&#xd;
-    &quot;max&quot;: 10,&#xd;
-    &quot;offset&quot;: 0,&#xd;
-    &quot;sort&quot;: &quot;id:asc&quot;&#xd;
-  }&#xd;
-}</stringProp>
-                      <stringProp name="Argument.metadata">=</stringProp>
-                    </elementProp>
-                  </collectionProp>
-                </elementProp>
-              </HTTPSamplerProxy>
-              <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                  <collectionProp name="HeaderManager.headers">
-                    <elementProp name="" elementType="Header">
-                      <stringProp name="Header.name">Authorization</stringProp>
-                      <stringProp name="Header.value">Bearer ${jwt}</stringProp>
-                    </elementProp>
-                  </collectionProp>
-                </HeaderManager>
-                <hashTree/>
-                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check if data is present" enabled="true">
-                  <stringProp name="JSON_PATH">data.persons.data</stringProp>
-                  <stringProp name="EXPECTED_VALUE"></stringProp>
-                  <boolProp name="JSONVALIDATION">false</boolProp>
-                  <boolProp name="EXPECT_NULL">false</boolProp>
-                  <boolProp name="INVERT">false</boolProp>
-                  <boolProp name="ISREGEX">false</boolProp>
-                </JSONPathAssertion>
-                <hashTree/>
-                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Store 100 Persons in Environment" enabled="true">
-                  <stringProp name="JSONPostProcessor.referenceNames">persons</stringProp>
-                  <stringProp name="JSONPostProcessor.jsonPathExprs">data.persons.data</stringProp>
-                  <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-                </JSONPostProcessor>
-                <hashTree/>
-                <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-                  <boolProp name="ResultCollector.error_logging">false</boolProp>
-                  <objProp>
-                    <name>saveConfig</name>
-                    <value class="SampleSaveConfiguration">
-                      <time>true</time>
-                      <latency>true</latency>
-                      <timestamp>true</timestamp>
-                      <success>true</success>
-                      <label>true</label>
-                      <code>true</code>
-                      <message>true</message>
-                      <threadName>true</threadName>
-                      <dataType>true</dataType>
-                      <encoding>false</encoding>
-                      <assertions>true</assertions>
-                      <subresults>true</subresults>
-                      <responseData>false</responseData>
-                      <samplerData>false</samplerData>
-                      <xml>false</xml>
-                      <fieldNames>true</fieldNames>
-                      <responseHeaders>false</responseHeaders>
-                      <requestHeaders>false</requestHeaders>
-                      <responseDataOnError>false</responseDataOnError>
-                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                      <assertionsResultsToSave>0</assertionsResultsToSave>
-                      <bytes>true</bytes>
-                      <sentBytes>true</sentBytes>
-                      <url>true</url>
-                      <threadCounts>true</threadCounts>
-                      <idleTime>true</idleTime>
-                      <connectTime>true</connectTime>
-                    </value>
-                  </objProp>
-                  <stringProp name="filename"></stringProp>
-                </ResultCollector>
-                <hashTree/>
-                <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
-                  <boolProp name="ResultCollector.error_logging">false</boolProp>
-                  <objProp>
-                    <name>saveConfig</name>
-                    <value class="SampleSaveConfiguration">
-                      <time>true</time>
-                      <latency>true</latency>
-                      <timestamp>true</timestamp>
-                      <success>true</success>
-                      <label>true</label>
-                      <code>true</code>
-                      <message>true</message>
-                      <threadName>true</threadName>
-                      <dataType>true</dataType>
-                      <encoding>false</encoding>
-                      <assertions>true</assertions>
-                      <subresults>true</subresults>
-                      <responseData>false</responseData>
-                      <samplerData>false</samplerData>
-                      <xml>false</xml>
-                      <fieldNames>true</fieldNames>
-                      <responseHeaders>false</responseHeaders>
-                      <requestHeaders>false</requestHeaders>
-                      <responseDataOnError>false</responseDataOnError>
-                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                      <assertionsResultsToSave>0</assertionsResultsToSave>
-                      <bytes>true</bytes>
-                      <sentBytes>true</sentBytes>
-                      <url>true</url>
-                      <threadCounts>true</threadCounts>
-                      <idleTime>true</idleTime>
-                      <connectTime>true</connectTime>
-                    </value>
-                  </objProp>
-                  <stringProp name="filename"></stringProp>
-                </ResultCollector>
-                <hashTree/>
-              </hashTree>
-            </hashTree>
-          </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create a company with connections - Officer"/>
-          <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company with Connections">
-              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv</stringProp>
-              <stringProp name="fileEncoding">UTF-8</stringProp>
-              <stringProp name="variableNames"></stringProp>
-              <boolProp name="ignoreFirstLine">true</boolProp>
-              <stringProp name="delimiter">,</stringProp>
-              <boolProp name="quotedData">false</boolProp>
-              <boolProp name="recycle">true</boolProp>
-              <boolProp name="stopThread">false</boolProp>
-              <stringProp name="shareMode">shareMode.all</stringProp>
-            </CSVDataSet>
-            <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections - Officer">
-              <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/admin/query</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&#xd;
-    &quot;operationName&quot;: &quot;createCompany&quot;,&#xd;
-    &quot;variables&quot;: {&#xd;
-        &quot;name&quot;: &quot;${companyName}_${__time(HHmmss)}&quot;,&#xd;
-        &quot;tin&quot;: null,&#xd;
-        &quot;cif&quot;: null,&#xd;
-        &quot;birthday&quot;: &quot;${birthday}&quot;,&#xd;
-        &quot;isNGORetailFinance&quot;: false,&#xd;
-        &quot;logicalBranchCode&quot;: null,&#xd;
-        &quot;businessType&quot;: &quot;${businessType}&quot;,&#xd;
-        &quot;remarks&quot;: &quot;${remarks}&quot;,&#xd;
-        &quot;relationships&quot;: [&#xd;
-            {&#xd;
-                &quot;source&quot;: &quot;${officerId}&quot;,&#xd;
-                &quot;relationship&quot;: &quot;a9f29a0c-e851-498e-9ff1-b08b68ed5549&quot;,&#xd;
-                &quot;attributes&quot;: [&#xd;
-                    {&#xd;
-                        &quot;key&quot;: &quot;type&quot;,&#xd;
-                        &quot;stringValue&quot;: &quot;PERCENTAGE&quot;&#xd;
-                    },&#xd;
-                    {&#xd;
-                        &quot;key&quot;: &quot;subscribedCapitalStock&quot;,&#xd;
-                        &quot;numberValue&quot;: 21&#xd;
-                    },&#xd;
-                    {&#xd;
-                        &quot;key&quot;: &quot;outstandingVotingStock&quot;,&#xd;
-                        &quot;numberValue&quot;: 21&#xd;
-                    }&#xd;
-                ]&#xd;
-            }&#xd;
-        ],&#xd;
-        &quot;aliases&quot;: [],&#xd;
-        &quot;isRelatedParty&quot;: false&#xd;
-    },&#xd;
-    &quot;query&quot;: &quot;mutation createCompany($name: String!, $tin: String, $cif: String, $logicalBranchCode: String, $businessType: BusinessType!, $birthday: Long, $remarks: String, $isNGORetailFinance: Boolean, $relationships: [CreateCustomerRelationship], $aliases: [CreateAliasesRequest], $isRelatedParty: Boolean!) {\n  createCompany(\n    input: {name: $name, tin: $tin, cif: $cif, logicalBranchCode: $logicalBranchCode, businessType: $businessType, birthday: $birthday, remarks: $remarks, isNGORetailFinance: $isNGORetailFinance, relationships: $relationships, aliases: $aliases, isRelatedParty: $isRelatedParty}\n  ) {\n    id\n    name\n    birthday\n    businessType\n    remarks\n    logicalBranchCode\n    isRelatedParty\n    tin\n    cif\n    created\n    updated\n    isNGORetailFinance\n    relationships {\n      destination {\n        ... on Person {\n          firstName\n          middleName\n          lastName\n          __typename\n        }\n        ... on Company {\n          name\n          __typename\n        }\n        __typename\n      }\n      relationship {\n        description\n        __typename\n      }\n      __typename\n    }\n    aliases {\n      ... on Alias {\n        id\n        name\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
-}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-            </HTTPSamplerProxy>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="72221477">&quot;errors&quot;:</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">20</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons"/>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons" enabled="true"/>
             <hashTree>
               <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
                 <stringProp name="ConstantTimer.delay">500</stringProp>

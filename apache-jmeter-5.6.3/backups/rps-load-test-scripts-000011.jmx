@@ -2554,7 +2554,7 @@
             <hashTree>
               <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Director ID">
                 <stringProp name="JSONPostProcessor.referenceNames">directorId</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">data.searchPerson[0].id</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">data.searchPerson.id</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
               </JSONPostProcessor>
               <hashTree/>
@@ -2815,7 +2815,7 @@
             <hashTree>
               <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Director ID">
                 <stringProp name="JSONPostProcessor.referenceNames">officerId</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">data.searchPerson[0].id</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">data.searchPerson.id</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
               </JSONPostProcessor>
               <hashTree/>
