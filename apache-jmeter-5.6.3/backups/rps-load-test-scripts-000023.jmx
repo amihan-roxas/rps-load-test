@@ -4848,7 +4848,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="72221477">&quot;errors&quot;:</stringProp>
                 </collectionProp>
@@ -4943,7 +4943,8 @@
         &quot;name&quot;: &quot;${companyName}_${__time(HHmmss)}&quot;,&#xd;
         &quot;tin&quot;: null,&#xd;
         &quot;cif&quot;: null,&#xd;
-        &quot;birthday&quot;:${birthday},&#xd;
+        &quot;birthday&quot;:${birthday&#xd;
+        },&#xd;
         &quot;isNGORetailFinance&quot;: false,&#xd;
         &quot;logicalBranchCode&quot;: null,&#xd;
         &quot;businessType&quot;: &quot;${businessType}&quot;,&#xd;
@@ -4985,7 +4986,7 @@
                     },&#xd;
                     {&#xd;
                         &quot;key&quot;: &quot;amount&quot;,&#xd;
-                        &quot;numberValue&quot;: 10&#xd;
+                        &quot;numberValue&quot;: &quot;10&quot;&#xd;
                     }&#xd;
                 ]&#xd;
             }&#xd;

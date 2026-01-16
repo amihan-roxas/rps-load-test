@@ -4829,7 +4829,7 @@
     &quot;operationName&quot;: &quot;createCompany&quot;,&#xd;
     &quot;variables&quot;: {&#xd;
         &quot;name&quot;: &quot;${companyName}_${__time(HHmmss)}&quot;,&#xd;
-        &quot;tin&quot;: null,&#xd;
+        &quot;tin&quot;: &quot;${tin}&quot;,&#xd;
         &quot;cif&quot;: null,&#xd;
         &quot;birthday&quot;:${birthday},&#xd;
         &quot;isNGORetailFinance&quot;: false,&#xd;
@@ -4848,7 +4848,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="72221477">&quot;errors&quot;:</stringProp>
                 </collectionProp>
@@ -4862,14 +4862,6 @@
                 <stringProp name="JSONPostProcessor.referenceNames">companyOneId</stringProp>
                 <stringProp name="JSONPostProcessor.jsonPathExprs">data.createCompany.id</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-                <stringProp name="Sample.scope">all</stringProp>
-              </JSONPostProcessor>
-              <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor">
-                <stringProp name="JSONPostProcessor.referenceNames">companyOneName</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">data.createCompany.name</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-                <stringProp name="Sample.scope">all</stringProp>
               </JSONPostProcessor>
               <hashTree/>
             </hashTree>
@@ -4950,7 +4942,7 @@
         &quot;remarks&quot;: &quot;${remarks}&quot;,&#xd;
         &quot;relationships&quot;: [&#xd;
             {&#xd;
-                &quot;destination&quot;: &quot;${companyOneId}&quot;,&#xd;
+                &quot;destination&quot;: &quot;${bdoId}&quot;,&#xd;
                 &quot;relationship&quot;: &quot;a9f29a0c-e851-498e-9ff1-b08b68ed5549&quot;,&#xd;
                 &quot;attributes&quot;: [&#xd;
                     {&#xd;
@@ -4972,20 +4964,20 @@
                 ]&#xd;
             },&#xd;
             {&#xd;
-                &quot;source&quot;: &quot;${bdoId}&quot;,&#xd;
+                &quot;source&quot;: &quot;${companyOneId}&quot;,&#xd;
                 &quot;relationship&quot;: &quot;31dc590a-c0bc-4a08-8e64-230666f2abb1&quot;,&#xd;
                 &quot;attributes&quot;: [&#xd;
                     {&#xd;
                         &quot;key&quot;: &quot;votingInId&quot;,&#xd;
-                        &quot;stringValue&quot;: &quot;${companyOneId}&quot;&#xd;
+                        &quot;stringValue&quot;: &quot;f1691a77-ba97-4558-8318-a47aea2b7bef&quot;&#xd;
                     },&#xd;
                     {&#xd;
                         &quot;key&quot;: &quot;votingInName&quot;,&#xd;
-                        &quot;stringValue&quot;: &quot;${companyOneName}&quot;&#xd;
+                        &quot;stringValue&quot;: &quot;HD1&quot;&#xd;
                     },&#xd;
                     {&#xd;
                         &quot;key&quot;: &quot;amount&quot;,&#xd;
-                        &quot;numberValue&quot;: 10&#xd;
+                        &quot;numberValue&quot;: &quot;10&quot;&#xd;
                     }&#xd;
                 ]&#xd;
             }&#xd;
