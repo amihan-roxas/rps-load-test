@@ -1,147 +1,117 @@
-2026-01-16 13:19:27,273 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2026-01-16 13:19:27,305 INFO o.a.j.JMeter: Loading user properties from: user.properties
-2026-01-16 13:19:27,306 INFO o.a.j.JMeter: Loading system properties from: system.properties
-2026-01-16 13:19:27,315 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
-2026-01-16 13:19:27,316 INFO o.a.j.JMeter: Version 5.6.3
-2026-01-16 13:19:27,316 INFO o.a.j.JMeter: java.version=21.0.2
-2026-01-16 13:19:27,316 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
-2026-01-16 13:19:27,316 INFO o.a.j.JMeter: os.name=Mac OS X
-2026-01-16 13:19:27,316 INFO o.a.j.JMeter: os.arch=x86_64
-2026-01-16 13:19:27,316 INFO o.a.j.JMeter: os.version=15.4.1
-2026-01-16 13:19:27,316 INFO o.a.j.JMeter: file.encoding=UTF-8
-2026-01-16 13:19:27,316 INFO o.a.j.JMeter: java.awt.headless=null
-2026-01-16 13:19:27,316 INFO o.a.j.JMeter: Max memory     =1073741824
-2026-01-16 13:19:27,316 INFO o.a.j.JMeter: Available Processors =8
-2026-01-16 13:19:27,329 INFO o.a.j.JMeter: Default Locale=English (EN)
-2026-01-16 13:19:27,329 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2026-01-16 13:19:27,329 INFO o.a.j.JMeter: JMeterHome=/Users/karlmarxroxas/Documents/jmeter/apache-jmeter-5.6.3
-2026-01-16 13:19:27,329 INFO o.a.j.JMeter: user.dir  =/Users/karlmarxroxas/Documents/jmeter/apache-jmeter-5.6.3/bin
-2026-01-16 13:19:27,330 INFO o.a.j.JMeter: PWD       =/Users/karlmarxroxas/Documents/jmeter/apache-jmeter-5.6.3/bin
-2026-01-16 13:19:27,331 INFO o.a.j.JMeter: IP: 192.168.1.58 Name: Amihans-MacBook-Pro.local FullName: 192.168.1.58
-2026-01-16 13:19:27,354 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
-2026-01-16 13:19:28,122 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
-2026-01-16 13:20:25,339 INFO o.a.j.s.FileServer: Default base='/Users/karlmarxroxas/Documents/jmeter/apache-jmeter-5.6.3/bin'
-2026-01-16 13:20:25,342 INFO o.a.j.g.a.Load: Loading file: /Users/karlmarxroxas/Documents/jmeter/rps-load-test-scripts.jmx
-2026-01-16 13:20:25,342 INFO o.a.j.s.FileServer: Set new base='/Users/karlmarxroxas/Documents/jmeter'
-2026-01-16 13:20:25,557 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2026-01-16 13:20:25,590 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2026-01-16 13:20:25,592 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2026-01-16 13:20:25,593 INFO o.a.j.s.SaveService: Loading file: /Users/karlmarxroxas/Documents/jmeter/rps-load-test-scripts.jmx
-2026-01-16 13:20:25,623 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-01-16 13:20:25,624 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-01-16 13:20:25,624 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-01-16 13:20:25,624 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-01-16 13:20:25,624 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2026-01-16 13:20:25,624 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2026-01-16 13:20:25,924 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2026-01-16 13:20:25,924 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
-2026-01-16 13:20:25,924 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2026-01-16 13:20:25,924 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2026-01-16 13:20:27,076 INFO o.a.j.s.FileServer: Set new base='/Users/karlmarxroxas/Documents/jmeter'
-2026-01-16 14:01:40,189 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2026-01-16 14:01:40,192 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-01-16 14:01:40,193 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-01-16 14:01:40,194 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2026-01-16 14:01:40,194 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2026-01-16 14:01:40,263 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
-2026-01-16 14:01:40,437 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
-2026-01-16 14:01:40,437 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Users.
-2026-01-16 14:01:40,437 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2026-01-16 14:01:40,438 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
-2026-01-16 14:01:40,442 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2026-01-16 14:01:40,442 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2026-01-16 14:01:40,449 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
-2026-01-16 14:01:40,477 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = Amihans-MacBook-Pro.local
-2026-01-16 14:01:40,492 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
-2026-01-16 14:01:40,832 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
-2026-01-16 14:01:40,838 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
-2026-01-16 14:01:40,838 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
-2026-01-16 14:01:40,980 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
-2026-01-16 14:01:40,985 INFO o.a.j.u.SSLManager: KeyStore created OK
-2026-01-16 14:01:40,985 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
-2026-01-16 14:01:50,393 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
-2026-01-16 14:02:10,706 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/spouse-director.csv
-2026-01-16 14:03:02,952 INFO o.a.j.g.a.Start: Stopping test
-2026-01-16 14:03:02,981 INFO o.a.j.t.JMeterThread: Stopping: Users 1-1
-2026-01-16 14:03:02,982 WARN o.a.j.t.JMeterThread: Interrupting: Users 1-1 sampler: Director
-2026-01-16 14:03:02,985 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-1
-2026-01-16 14:03:02,986 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2026-01-16 14:03:02,987 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
-2026-01-16 14:03:02,987 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/spouse-director.csv
-2026-01-16 14:03:02,988 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
-2026-01-16 14:05:08,049 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2026-01-16 14:05:08,050 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-01-16 14:05:08,053 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
-2026-01-16 14:05:08,129 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
-2026-01-16 14:05:08,130 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Users.
-2026-01-16 14:05:08,130 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2026-01-16 14:05:08,130 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
-2026-01-16 14:05:08,132 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2026-01-16 14:05:08,132 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2026-01-16 14:05:08,133 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
-2026-01-16 14:05:14,679 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
-2026-01-16 14:05:37,846 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv
-2026-01-16 14:11:16,672 INFO o.a.j.t.JMeterThread: Thread is done: Users 1-1
-2026-01-16 14:11:16,674 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-1
-2026-01-16 14:11:16,675 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2026-01-16 14:11:16,675 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
-2026-01-16 14:11:16,675 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv
-2026-01-16 14:11:16,676 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
-2026-01-16 14:44:27,714 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2026-01-16 14:44:27,716 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-01-16 14:44:27,718 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
-2026-01-16 14:44:27,801 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
-2026-01-16 14:44:27,802 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Users.
-2026-01-16 14:44:27,802 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2026-01-16 14:44:27,803 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
-2026-01-16 14:44:27,805 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2026-01-16 14:44:27,805 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2026-01-16 14:44:27,807 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
-2026-01-16 14:44:33,785 INFO o.a.j.g.a.Start: Stopping test
-2026-01-16 14:44:33,803 INFO o.a.j.t.JMeterThread: Stopping: Users 1-1
-2026-01-16 14:44:33,804 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
-2026-01-16 14:44:33,805 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-1
-2026-01-16 14:44:33,806 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2026-01-16 14:44:33,806 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
-2026-01-16 14:44:39,732 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2026-01-16 14:44:39,733 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-01-16 14:44:39,736 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
-2026-01-16 14:44:39,809 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
-2026-01-16 14:44:39,810 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Users.
-2026-01-16 14:44:39,810 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2026-01-16 14:44:39,810 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
-2026-01-16 14:44:39,812 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2026-01-16 14:44:39,812 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2026-01-16 14:44:39,813 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
-2026-01-16 14:44:47,679 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
-2026-01-16 14:44:57,670 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
-2026-01-16 14:45:10,978 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv
-2026-01-16 14:46:14,108 INFO o.a.j.g.a.Start: Stopping test
-2026-01-16 14:46:14,131 INFO o.a.j.t.JMeterThread: Stopping: Users 1-1
-2026-01-16 14:46:14,131 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
-2026-01-16 14:46:14,132 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-1
-2026-01-16 14:46:14,133 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2026-01-16 14:46:14,133 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
-2026-01-16 14:46:14,133 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
-2026-01-16 14:46:14,134 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv
-2026-01-16 14:46:14,134 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
-2026-01-16 14:48:38,113 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2026-01-16 14:48:38,114 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-01-16 14:48:38,116 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
-2026-01-16 14:48:38,174 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
-2026-01-16 14:48:38,175 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Users.
-2026-01-16 14:48:38,176 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2026-01-16 14:48:38,176 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
-2026-01-16 14:48:38,177 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2026-01-16 14:48:38,178 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2026-01-16 14:48:38,178 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
-2026-01-16 14:48:44,669 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
-2026-01-16 14:49:00,927 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
-2026-01-16 14:49:10,282 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv
-2026-01-16 14:57:13,255 INFO o.a.j.t.JMeterThread: Thread is done: Users 1-1
-2026-01-16 14:57:13,256 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-1
-2026-01-16 14:57:13,257 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2026-01-16 14:57:13,257 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
-2026-01-16 14:57:13,258 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
-2026-01-16 14:57:13,258 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv
-2026-01-16 14:57:13,258 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-01-16 15:08:00,295 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-01-16 15:08:00,319 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2026-01-16 15:08:00,320 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2026-01-16 15:08:00,327 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-01-16 15:08:00,327 INFO o.a.j.JMeter: Version 5.6.3
+2026-01-16 15:08:00,327 INFO o.a.j.JMeter: java.version=21.0.2
+2026-01-16 15:08:00,327 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-01-16 15:08:00,327 INFO o.a.j.JMeter: os.name=Mac OS X
+2026-01-16 15:08:00,327 INFO o.a.j.JMeter: os.arch=x86_64
+2026-01-16 15:08:00,327 INFO o.a.j.JMeter: os.version=15.4.1
+2026-01-16 15:08:00,328 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-01-16 15:08:00,328 INFO o.a.j.JMeter: java.awt.headless=null
+2026-01-16 15:08:00,328 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-01-16 15:08:00,328 INFO o.a.j.JMeter: Available Processors =8
+2026-01-16 15:08:00,338 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-01-16 15:08:00,339 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-01-16 15:08:00,339 INFO o.a.j.JMeter: JMeterHome=/Users/karlmarxroxas/Documents/jmeter/apache-jmeter-5.6.3
+2026-01-16 15:08:00,339 INFO o.a.j.JMeter: user.dir  =/Users/karlmarxroxas/Documents/jmeter/apache-jmeter-5.6.3/bin
+2026-01-16 15:08:00,340 INFO o.a.j.JMeter: PWD       =/Users/karlmarxroxas/Documents/jmeter/apache-jmeter-5.6.3/bin
+2026-01-16 15:08:00,355 INFO o.a.j.JMeter: IP: 192.168.1.58 Name: Amihans-MacBook-Pro.local FullName: 192.168.1.58
+2026-01-16 15:08:00,377 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2026-01-16 15:08:00,930 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2026-01-16 15:08:17,888 INFO o.a.j.s.FileServer: Default base='/Users/karlmarxroxas/Documents/jmeter/apache-jmeter-5.6.3/bin'
+2026-01-16 15:08:17,891 INFO o.a.j.g.a.Load: Loading file: /Users/karlmarxroxas/Documents/jmeter/rps-load-test-scripts.jmx
+2026-01-16 15:08:17,891 INFO o.a.j.s.FileServer: Set new base='/Users/karlmarxroxas/Documents/jmeter'
+2026-01-16 15:08:18,080 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-01-16 15:08:18,107 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-01-16 15:08:18,109 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-01-16 15:08:18,111 INFO o.a.j.s.SaveService: Loading file: /Users/karlmarxroxas/Documents/jmeter/rps-load-test-scripts.jmx
+2026-01-16 15:08:18,142 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-16 15:08:18,142 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-16 15:08:18,142 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-16 15:08:18,143 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-16 15:08:18,143 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-01-16 15:08:18,143 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-01-16 15:08:18,450 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-01-16 15:08:18,450 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-01-16 15:08:18,450 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-01-16 15:08:18,450 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-01-16 15:08:19,997 INFO o.a.j.s.FileServer: Set new base='/Users/karlmarxroxas/Documents/jmeter'
+2026-01-16 15:52:19,521 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-01-16 15:52:19,523 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-16 15:52:19,523 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-16 15:52:19,524 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-01-16 15:52:19,524 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-01-16 15:52:19,579 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-01-16 15:52:19,692 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
+2026-01-16 15:52:19,693 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Users.
+2026-01-16 15:52:19,693 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-01-16 15:52:19,693 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2026-01-16 15:52:19,698 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-01-16 15:52:19,698 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-01-16 15:52:19,704 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
+2026-01-16 15:52:19,728 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = Amihans-MacBook-Pro.local
+2026-01-16 15:52:19,741 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-01-16 15:52:19,886 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2026-01-16 15:52:19,891 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2026-01-16 15:52:19,891 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2026-01-16 15:52:19,980 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2026-01-16 15:52:19,982 INFO o.a.j.u.SSLManager: KeyStore created OK
+2026-01-16 15:52:19,983 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2026-01-16 15:52:27,421 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
+2026-01-16 15:52:44,650 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
+2026-01-16 15:53:02,587 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/indi.csv
+2026-01-16 15:54:10,421 INFO o.a.j.g.a.Start: Stopping test
+2026-01-16 15:54:10,450 INFO o.a.j.t.JMeterThread: Stopping: Users 1-1
+2026-01-16 15:54:10,450 WARN o.a.j.t.JMeterThread: Interrupting: Users 1-1 sampler: Create - Director
+2026-01-16 15:54:10,454 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-1
+2026-01-16 15:54:10,456 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-01-16 15:54:10,456 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
+2026-01-16 15:54:10,458 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
+2026-01-16 15:54:10,458 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/indi.csv
+2026-01-16 15:54:10,458 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-01-16 15:58:23,359 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-01-16 15:58:23,360 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-16 15:58:23,364 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-01-16 15:58:23,445 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
+2026-01-16 15:58:23,447 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Users.
+2026-01-16 15:58:23,447 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-01-16 15:58:23,447 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2026-01-16 15:58:23,450 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-01-16 15:58:23,451 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-01-16 15:58:23,452 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
+2026-01-16 15:58:30,828 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
+2026-01-16 15:58:43,074 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
+2026-01-16 15:58:58,483 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/indi.csv
+2026-01-16 15:58:59,955 INFO o.a.j.g.a.Start: Stopping test
+2026-01-16 15:58:59,984 INFO o.a.j.t.JMeterThread: Stopping: Users 1-1
+2026-01-16 15:58:59,985 WARN o.a.j.t.JMeterThread: Interrupting: Users 1-1 sampler: Child of Director
+2026-01-16 15:58:59,987 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-1
+2026-01-16 15:58:59,987 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-01-16 15:58:59,987 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
+2026-01-16 15:58:59,988 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
+2026-01-16 15:58:59,988 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/indi.csv
+2026-01-16 15:58:59,988 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-01-16 15:59:04,506 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-01-16 15:59:04,507 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-16 15:59:04,510 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-01-16 15:59:04,575 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Users
+2026-01-16 15:59:04,575 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Users.
+2026-01-16 15:59:04,575 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-01-16 15:59:04,576 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2026-01-16 15:59:04,577 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-01-16 15:59:04,577 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-01-16 15:59:04,578 INFO o.a.j.t.JMeterThread: Thread started: Users 1-1
+2026-01-16 15:59:17,250 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
+2026-01-16 15:59:28,746 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
+2026-01-16 15:59:39,239 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/indi.csv
+2026-01-16 16:00:11,617 INFO o.a.j.g.a.Start: Stopping test
+2026-01-16 16:00:11,636 INFO o.a.j.t.JMeterThread: Stopping: Users 1-1
+2026-01-16 16:00:11,637 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-01-16 16:00:11,637 INFO o.a.j.t.JMeterThread: Thread finished: Users 1-1
+2026-01-16 16:00:11,638 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-01-16 16:00:11,639 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
+2026-01-16 16:00:11,639 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
+2026-01-16 16:00:11,639 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/indi.csv
+2026-01-16 16:00:11,639 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)

@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
@@ -12,7 +14,7 @@
         <longProp name="timeoutInMs">0</longProp>
       </SyncTimer>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Users">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Users" enabled="true">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
@@ -3495,9 +3497,9 @@
                     <stringProp name="Argument.value">{&#xd;
     &quot;operationName&quot;: &quot;searchPerson&quot;,&#xd;
     &quot;variables&quot;: {&#xd;
-        &quot;firstName&quot;: &quot;${e1cDirectorFName}&quot;,&#xd;
+        &quot;firstName&quot;: &quot;${e4DirectorFName}&quot;,&#xd;
         &quot;middleName&quot;: null,&#xd;
-        &quot;lastName&quot;: &quot;${e1cDirectorLName}&quot;,&#xd;
+        &quot;lastName&quot;: &quot;${e4DirectorLName}&quot;,&#xd;
         &quot;birthday&quot;: null,&#xd;
         &quot;tin&quot;: null,&#xd;
         &quot;max&quot;: 20,&#xd;
@@ -3756,9 +3758,9 @@
                     <stringProp name="Argument.value">{&#xd;
     &quot;operationName&quot;: &quot;searchPerson&quot;,&#xd;
     &quot;variables&quot;: {&#xd;
-        &quot;firstName&quot;: &quot;${e1cOfficerFName}&quot;,&#xd;
+        &quot;firstName&quot;: &quot;${e4OfficerFName}&quot;,&#xd;
         &quot;middleName&quot;: null,&#xd;
-        &quot;lastName&quot;: &quot;${e1cOfficerLName}&quot;,&#xd;
+        &quot;lastName&quot;: &quot;${e4OfficerLName}&quot;,&#xd;
         &quot;birthday&quot;: null,&#xd;
         &quot;tin&quot;: null,&#xd;
         &quot;max&quot;: 20,&#xd;
