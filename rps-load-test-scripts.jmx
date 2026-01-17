@@ -677,7 +677,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.A" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.A"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
             <collectionProp name="HeaderManager.headers">
@@ -2377,7 +2377,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.4" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.4"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -2388,7 +2388,7 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer">
             <stringProp name="ConstantTimer.delay">500</stringProp>
             <stringProp name="RandomTimer.range">2500</stringProp>
             <stringProp name="TestPlan.comments">most delays will be near average, but will get occasional outliers.</stringProp>
