@@ -12,10 +12,14 @@ This is used for Mac device only
 
 ### CLI
 #### Run test in Terminal
-`./jmeter -n -t 'location/of/test/file.jmx' -l 'location/of/result/file .jtl'`
+```./jmeter -n -t 'location/of/test/file.jmx' -l 'location/of/result/file .jtl'```
 
 #### Generate HTML Report 
-`./jmeter -n -t 'location/of/test/file.jmx' -l 'location/of/result/file .jtl' -e -o 'loc/of/reports/folder'`
+```./jmeter -n -t 'location/of/test/file.jmx' -l 'location/of/result/file .jtl' -e -o 'loc/of/reports/folder'```
 
 Sample
-`jmeter -n -t /Users/karlmarxroxas/Documents/jmeter/rps-load-test-scripts.jmx -l /Users/karlmarxroxas/Documents/jmeter/reports/results.jtl -e -o /Users/karlmarxroxas/Documents/jmeter/reports/html`
+
+```jmeter -n -t /Users/karlmarxroxas/Documents/jmeter/rps-load-test-scripts.jmx -l /Users/karlmarxroxas/Documents/jmeter/reports/results.jtl -e -o /Users/karlmarxroxas/Documents/jmeter/reports/html```
+
+#### Document
+RP Checklist Guide: https://docs.google.com/document/d/1Mt9_8WB_gTyzNGJ_Ca0C_X5DYKvrmR8moFX7Ev_x3eg/edit?usp=sharing

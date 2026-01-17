@@ -9,18 +9,16 @@
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
-      <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
-        <intProp name="groupSize">0</intProp>
-        <longProp name="timeoutInMs">0</longProp>
-      </SyncTimer>
-      <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="User - 1">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="User">
+        <boolProp name="ThreadGroup.delayedStart">true</boolProp>
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <longProp name="ThreadGroup.duration">1200</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-          <stringProp name="LoopController.loops">5</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
       </ThreadGroup>
@@ -38,9 +36,14 @@
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login - Once Only" enabled="true"/>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login - Once Only"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="Synchronizing Timer" enabled="false">
+            <intProp name="groupSize">0</intProp>
+            <longProp name="timeoutInMs">0</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">
             <intProp name="HTTPSampler.concurrentPool">6</intProp>
             <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
@@ -118,7 +121,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 100 Persons" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 100 Persons"/>
         <hashTree>
           <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
             <stringProp name="ConstantTimer.delay">500</stringProp>
@@ -369,7 +372,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <RandomController guiclass="RandomControlGui" testclass="RandomController" testname="Create Indi (No Relationship OR  Search Indi) - Random" enabled="true">
+        <RandomController guiclass="RandomControlGui" testclass="RandomController" testname="Create Indi (No Relationship OR  Search Indi) - Random">
           <intProp name="InterleaveControl.style">1</intProp>
           <stringProp name="TestPlan.comments">Each iteration will  execute a timer before next iteration will run</stringProp>
         </RandomController>
@@ -520,7 +523,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <RandomController guiclass="RandomControlGui" testclass="RandomController" testname="Create Non-Indi (No Relationship OR  Search Non-Indi) - Random" enabled="true">
+        <RandomController guiclass="RandomControlGui" testclass="RandomController" testname="Create Non-Indi (No Relationship OR  Search Non-Indi) - Random">
           <intProp name="InterleaveControl.style">1</intProp>
           <stringProp name="TestPlan.comments">Each iteration will  execute a timer before next iteration will run</stringProp>
         </RandomController>
@@ -670,7 +673,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.A" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.A"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -689,7 +692,7 @@
           <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Director E.1.A" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director E1A">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -735,7 +738,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Director E1A" enabled="true">
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Director E1A">
               <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="variableNames"></stringProp>
@@ -892,9 +895,9 @@
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Officer E.1.A" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Officer E.1.A"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Officer E1A">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1103,7 +1106,7 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Spouse of Officer" enabled="true"/>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Spouse Officer E1A" enabled="true">
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Spouse Officer E1A">
               <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/spouse-officer.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="variableNames"></stringProp>
@@ -1115,7 +1118,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Spouse of Officer" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Spouse of Officer E1A">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -1300,7 +1303,7 @@
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Spouse of Director" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Spouse of Director"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Spouse Director E1A" enabled="true">
               <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/spouse-director.csv</stringProp>
@@ -1314,7 +1317,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Spouse of Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Spouse of Director E1A">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -1500,7 +1503,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.B" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.B"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -1531,7 +1534,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director E1B">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1577,7 +1580,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="72221477">&quot;errors&quot;:</stringProp>
               </collectionProp>
@@ -1742,7 +1745,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Director E1B">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1951,7 +1954,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parent of Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parent of Director E1B">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -2141,9 +2144,9 @@
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Parent of Officer" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Parent of Officer"/>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Parent Officer E1B" enabled="true">
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Parent Officer E1B">
               <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/spouse-officer.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="variableNames"></stringProp>
@@ -2155,7 +2158,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parent of Officer" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Parent of Officer E1B">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -2346,7 +2349,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.4" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.4"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -2377,7 +2380,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create - Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create - Director E4">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2634,7 +2637,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create - Officer" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create - Officer E4">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2697,7 +2700,7 @@
               </JSONPostProcessor>
               <hashTree/>
             </hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="72221477">&quot;errors&quot;:</stringProp>
               </collectionProp>
@@ -2707,7 +2710,7 @@
               <intProp name="Assertion.test_type">20</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search - Officer" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search - Officer E4">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -2895,7 +2898,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections - Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections - Director E4">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -3096,7 +3099,7 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create a company with connections - Officer" enabled="true"/>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company with Connections" enabled="true">
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company with Connections">
               <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="variableNames"></stringProp>
@@ -3108,7 +3111,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections - Officer" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections - Officer E4">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -3308,7 +3311,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.C" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="E.1.C"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -3339,7 +3342,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create - Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create - Director E1C">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3408,7 +3411,7 @@
               <intProp name="Assertion.test_type">20</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search - Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search - Director">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -3596,7 +3599,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create - Officer" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create - Officer E1C">
               <stringProp name="TestPlan.comments">E1A-Director</stringProp>
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3843,7 +3846,7 @@
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create a child of Director" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create a child of Director"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Child of Director" enabled="true">
               <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/indi.csv</stringProp>
@@ -3857,7 +3860,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Child of Director" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Child of Director E1C">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -3902,7 +3905,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="72221477">&quot;errors&quot;:</stringProp>
               </collectionProp>
@@ -4061,7 +4064,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Child of Officer" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Child of Officer E1C">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -4252,7 +4255,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="H.1.A.1" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="H.1.A.1"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -4269,7 +4272,7 @@
             <stringProp name="TestPlan.comments">most delays will be near average, but will get occasional outliers.</stringProp>
           </GaussianRandomTimer>
           <hashTree/>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create a company with connections  to BDO" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create a company with connections  to BDO"/>
           <hashTree>
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company with Connections" enabled="true">
               <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv</stringProp>
@@ -4283,7 +4286,44 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections - BDO 1% and 15%" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search BDO">
+              <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.path">/admin/query</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
+    &quot;operationName&quot;: &quot;searchCompany&quot;,&#xd;
+    &quot;variables&quot;: {&#xd;
+        &quot;name&quot;: &quot;BDO&quot;,&#xd;
+        &quot;birthday&quot;: null,&#xd;
+        &quot;tin&quot;: null,&#xd;
+        &quot;max&quot;: 20,&#xd;
+        &quot;offset&quot;: 0,&#xd;
+        &quot;sort&quot;: &quot;name:asc&quot;&#xd;
+    },&#xd;
+    &quot;query&quot;: &quot;query searchCompany($name: String!, $birthday: Long, $tin: String, $businessType: BusinessType, $max: Int!, $offset: Int!, $sort: String!) {\n  searchCompany(\n    input: {name: $name, birthday: $birthday, tin: $tin, businessType: $businessType}\n    opts: {max: $max, offset: $offset, sort: $sort}\n  ) {\n    id\n    businessType\n    name\n    remarks\n    rpClassification {\n      code\n      description\n      __typename\n    }\n    rpTag {\n      code\n      description\n      __typename\n    }\n    birthday\n    tin\n    cif\n    logicalBranchCode\n    created\n    updated\n    isRoot\n    ocsTag\n    icbsTag\n    essTag\n    rpLastUpdated\n    availableSubscribedCapitalStock\n    availableOutstandingVotingStock\n    aliases {\n      ... on Alias {\n        name\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
+}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract BDO ID">
+                <stringProp name="JSONPostProcessor.referenceNames">h1a1BdoId</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">data.searchCompany[0].id</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections - BDO 1% and 15% H1A1">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -4308,7 +4348,7 @@
         &quot;remarks&quot;: &quot;${remarks}&quot;,&#xd;
         &quot;relationships&quot;: [&#xd;
             {&#xd;
-                &quot;source&quot;: &quot;3c421138-685c-460a-b872-90fc460d4255&quot;,&#xd;
+                &quot;source&quot;: &quot;${h1a1BdoId}&quot;,&#xd;
                 &quot;relationship&quot;: &quot;a9f29a0c-e851-498e-9ff1-b08b68ed5549&quot;,&#xd;
                 &quot;attributes&quot;: [&#xd;
                     {&#xd;
@@ -4487,7 +4527,279 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="H.1.B" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="H.1.A.2"/>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${jwt}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">500</stringProp>
+            <stringProp name="RandomTimer.range">2500</stringProp>
+            <stringProp name="TestPlan.comments">most delays will be near average, but will get occasional outliers.</stringProp>
+          </GaussianRandomTimer>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create a company with connections  to BDO"/>
+          <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Company with Connections">
+              <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv</stringProp>
+              <stringProp name="fileEncoding">UTF-8</stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <boolProp name="ignoreFirstLine">true</boolProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search BDO">
+              <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.path">/admin/query</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
+    &quot;operationName&quot;: &quot;searchCompany&quot;,&#xd;
+    &quot;variables&quot;: {&#xd;
+        &quot;name&quot;: &quot;BDO&quot;,&#xd;
+        &quot;birthday&quot;: null,&#xd;
+        &quot;tin&quot;: null,&#xd;
+        &quot;max&quot;: 20,&#xd;
+        &quot;offset&quot;: 0,&#xd;
+        &quot;sort&quot;: &quot;name:asc&quot;&#xd;
+    },&#xd;
+    &quot;query&quot;: &quot;query searchCompany($name: String!, $birthday: Long, $tin: String, $businessType: BusinessType, $max: Int!, $offset: Int!, $sort: String!) {\n  searchCompany(\n    input: {name: $name, birthday: $birthday, tin: $tin, businessType: $businessType}\n    opts: {max: $max, offset: $offset, sort: $sort}\n  ) {\n    id\n    businessType\n    name\n    remarks\n    rpClassification {\n      code\n      description\n      __typename\n    }\n    rpTag {\n      code\n      description\n      __typename\n    }\n    birthday\n    tin\n    cif\n    logicalBranchCode\n    created\n    updated\n    isRoot\n    ocsTag\n    icbsTag\n    essTag\n    rpLastUpdated\n    availableSubscribedCapitalStock\n    availableOutstandingVotingStock\n    aliases {\n      ... on Alias {\n        name\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
+}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract BDO ID">
+                <stringProp name="JSONPostProcessor.referenceNames">h1a2BdoId</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">data.searchCompany[0].id</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections - BDO 0.5% and 15% H1A2">
+              <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.path">/admin/query</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
+    &quot;operationName&quot;: &quot;createCompany&quot;,&#xd;
+    &quot;variables&quot;: {&#xd;
+        &quot;name&quot;: &quot;${companyName}_${__time(HHmmss)}&quot;,&#xd;
+        &quot;tin&quot;: null,&#xd;
+        &quot;cif&quot;: null,&#xd;
+        &quot;birthday&quot;:${birthday},&#xd;
+        &quot;isNGORetailFinance&quot;: false,&#xd;
+        &quot;logicalBranchCode&quot;: null,&#xd;
+        &quot;businessType&quot;: &quot;${businessType}&quot;,&#xd;
+        &quot;remarks&quot;: &quot;${remarks}&quot;,&#xd;
+        &quot;relationships&quot;: [&#xd;
+            {&#xd;
+                &quot;source&quot;: &quot;${h1a2BdoId}&quot;,&#xd;
+                &quot;relationship&quot;: &quot;a9f29a0c-e851-498e-9ff1-b08b68ed5549&quot;,&#xd;
+                &quot;attributes&quot;: [&#xd;
+                    {&#xd;
+                        &quot;key&quot;: &quot;type&quot;,&#xd;
+                        &quot;stringValue&quot;: &quot;PERCENTAGE&quot;&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;key&quot;: &quot;subscribedCapitalStock&quot;,&#xd;
+                        &quot;numberValue&quot;: 0.5&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;key&quot;: &quot;outstandingVotingStock&quot;,&#xd;
+                        &quot;numberValue&quot;: 15&#xd;
+                    },&#xd;
+                    {&#xd;
+                        &quot;key&quot;: &quot;isASubstantialStockholder&quot;,&#xd;
+                        &quot;booleanValue&quot;: false&#xd;
+                    }&#xd;
+                ]&#xd;
+            }&#xd;
+        ],&#xd;
+        &quot;aliases&quot;: [],&#xd;
+        &quot;isRelatedParty&quot;: false&#xd;
+    },&#xd;
+    &quot;query&quot;: &quot;mutation createCompany($name: String!, $tin: String, $cif: String, $logicalBranchCode: String, $businessType: BusinessType!, $birthday: Long, $remarks: String, $isNGORetailFinance: Boolean, $relationships: [CreateCustomerRelationship], $aliases: [CreateAliasesRequest], $isRelatedParty: Boolean!) {\n  createCompany(\n    input: {name: $name, tin: $tin, cif: $cif, logicalBranchCode: $logicalBranchCode, businessType: $businessType, birthday: $birthday, remarks: $remarks, isNGORetailFinance: $isNGORetailFinance, relationships: $relationships, aliases: $aliases, isRelatedParty: $isRelatedParty}\n  ) {\n    id\n    name\n    birthday\n    businessType\n    remarks\n    logicalBranchCode\n    isRelatedParty\n    tin\n    cif\n    created\n    updated\n    isNGORetailFinance\n    relationships {\n      destination {\n        ... on Person {\n          firstName\n          middleName\n          lastName\n          __typename\n        }\n        ... on Company {\n          name\n          __typename\n        }\n        __typename\n      }\n      relationship {\n        description\n        __typename\n      }\n      __typename\n    }\n    aliases {\n      ... on Alias {\n        id\n        name\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
+}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert no errors">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="72221477">&quot;errors&quot;:</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">20</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="List 10 Persons" enabled="true"/>
+            <hashTree>
+              <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
+                <stringProp name="ConstantTimer.delay">500</stringProp>
+                <stringProp name="RandomTimer.range">2500</stringProp>
+                <stringProp name="TestPlan.comments">most delays will be near average, but will get occasional outliers.</stringProp>
+              </GaussianRandomTimer>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="List 10 Persons" enabled="true">
+                <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.path">/admin/query</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&#xd;
+  &quot;query&quot;: &quot;query listPersons($max: Int!, $offset: Int!, $sort: String!) {\n  persons(opts: {max: $max, offset: $offset, sort: $sort}) {\n    total\n    data {\n      ... on Person {\n        id\n        firstName\n        middleName\n        lastName\n        birthday\n        tin\n        logicalBranchCode\n        rpTag {\n          code\n          description\n          __typename\n        }\n        rpLastUpdated\n        created\n        updated\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;,&#xd;
+  &quot;variables&quot;: {&#xd;
+    &quot;max&quot;: 10,&#xd;
+    &quot;offset&quot;: 0,&#xd;
+    &quot;sort&quot;: &quot;id:asc&quot;&#xd;
+  }&#xd;
+}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Authorization</stringProp>
+                      <stringProp name="Header.value">Bearer ${jwt}</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check if data is present" enabled="true">
+                  <stringProp name="JSON_PATH">data.persons.data</stringProp>
+                  <stringProp name="EXPECTED_VALUE"></stringProp>
+                  <boolProp name="JSONVALIDATION">false</boolProp>
+                  <boolProp name="EXPECT_NULL">false</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
+                  <boolProp name="ISREGEX">false</boolProp>
+                </JSONPathAssertion>
+                <hashTree/>
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Store 100 Persons in Environment" enabled="true">
+                  <stringProp name="JSONPostProcessor.referenceNames">persons</stringProp>
+                  <stringProp name="JSONPostProcessor.jsonPathExprs">data.persons.data</stringProp>
+                  <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+                </JSONPostProcessor>
+                <hashTree/>
+                <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+                  <boolProp name="ResultCollector.error_logging">false</boolProp>
+                  <objProp>
+                    <name>saveConfig</name>
+                    <value class="SampleSaveConfiguration">
+                      <time>true</time>
+                      <latency>true</latency>
+                      <timestamp>true</timestamp>
+                      <success>true</success>
+                      <label>true</label>
+                      <code>true</code>
+                      <message>true</message>
+                      <threadName>true</threadName>
+                      <dataType>true</dataType>
+                      <encoding>false</encoding>
+                      <assertions>true</assertions>
+                      <subresults>true</subresults>
+                      <responseData>false</responseData>
+                      <samplerData>false</samplerData>
+                      <xml>false</xml>
+                      <fieldNames>true</fieldNames>
+                      <responseHeaders>false</responseHeaders>
+                      <requestHeaders>false</requestHeaders>
+                      <responseDataOnError>false</responseDataOnError>
+                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                      <assertionsResultsToSave>0</assertionsResultsToSave>
+                      <bytes>true</bytes>
+                      <sentBytes>true</sentBytes>
+                      <url>true</url>
+                      <threadCounts>true</threadCounts>
+                      <idleTime>true</idleTime>
+                      <connectTime>true</connectTime>
+                    </value>
+                  </objProp>
+                  <stringProp name="filename"></stringProp>
+                </ResultCollector>
+                <hashTree/>
+                <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+                  <boolProp name="ResultCollector.error_logging">false</boolProp>
+                  <objProp>
+                    <name>saveConfig</name>
+                    <value class="SampleSaveConfiguration">
+                      <time>true</time>
+                      <latency>true</latency>
+                      <timestamp>true</timestamp>
+                      <success>true</success>
+                      <label>true</label>
+                      <code>true</code>
+                      <message>true</message>
+                      <threadName>true</threadName>
+                      <dataType>true</dataType>
+                      <encoding>false</encoding>
+                      <assertions>true</assertions>
+                      <subresults>true</subresults>
+                      <responseData>false</responseData>
+                      <samplerData>false</samplerData>
+                      <xml>false</xml>
+                      <fieldNames>true</fieldNames>
+                      <responseHeaders>false</responseHeaders>
+                      <requestHeaders>false</requestHeaders>
+                      <responseDataOnError>false</responseDataOnError>
+                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                      <assertionsResultsToSave>0</assertionsResultsToSave>
+                      <bytes>true</bytes>
+                      <sentBytes>true</sentBytes>
+                      <url>true</url>
+                      <threadCounts>true</threadCounts>
+                      <idleTime>true</idleTime>
+                      <connectTime>true</connectTime>
+                    </value>
+                  </objProp>
+                  <stringProp name="filename"></stringProp>
+                </ResultCollector>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="H.1.B"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -4518,7 +4830,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company with Connections H1B">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -4710,7 +5022,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="H.D.1" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="H.D.1"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -4741,7 +5053,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Non-Individual - No Relationship" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Non-Individual - No Relationship HD1">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -4816,7 +5128,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search BDO" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search BDO">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -4853,7 +5165,7 @@
               </JSONPostProcessor>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Non-Individual" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Non-Individual HD1">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -4942,7 +5254,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="H.D.2" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="H.D.2"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -5010,7 +5322,7 @@
               <stringProp name="shareMode">shareMode.all</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Non-Individual  - Stockholder to BDO" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Non-Individual  - Stockholder to BDO HD2">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -5145,7 +5457,7 @@
               </JSONPostProcessor>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Non-Individual with Connections (Proxy/Voting Trustee)" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Non-Individual with Connections (Proxy/Voting Trustee) HD2">
               <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/admin/query</stringProp>
@@ -5213,7 +5525,7 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
