@@ -1,0 +1,217 @@
+2026-01-17 12:38:52,809 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-01-17 12:38:52,837 INFO o.a.j.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/5.6.3/libexec/bin/user.properties
+2026-01-17 12:38:52,838 INFO o.a.j.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/5.6.3/libexec/bin/system.properties
+2026-01-17 12:38:52,846 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-01-17 12:38:52,846 INFO o.a.j.JMeter: Version 5.6.3
+2026-01-17 12:38:52,846 INFO o.a.j.JMeter: java.version=21.0.7
+2026-01-17 12:38:52,846 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-01-17 12:38:52,847 INFO o.a.j.JMeter: os.name=Mac OS X
+2026-01-17 12:38:52,847 INFO o.a.j.JMeter: os.arch=x86_64
+2026-01-17 12:38:52,847 INFO o.a.j.JMeter: os.version=15.4.1
+2026-01-17 12:38:52,847 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-01-17 12:38:52,847 INFO o.a.j.JMeter: java.awt.headless=true
+2026-01-17 12:38:52,847 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-01-17 12:38:52,847 INFO o.a.j.JMeter: Available Processors =8
+2026-01-17 12:38:52,860 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-01-17 12:38:52,860 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-01-17 12:38:52,860 INFO o.a.j.JMeter: JMeterHome=/usr/local/Cellar/jmeter/5.6.3/libexec
+2026-01-17 12:38:52,860 INFO o.a.j.JMeter: user.dir  =/Users/karlmarxroxas/Documents/jmeter
+2026-01-17 12:38:52,860 INFO o.a.j.JMeter: PWD       =/Users/karlmarxroxas/Documents/jmeter
+2026-01-17 12:38:52,862 INFO o.a.j.JMeter: IP: 192.168.1.58 Name: Amihans-MacBook-Pro.local FullName: 192.168.1.58
+2026-01-17 12:38:52,883 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/Users/karlmarxroxas/Documents/jmeter/reports/html'
+2026-01-17 12:38:52,887 INFO o.a.j.s.FileServer: Default base='/Users/karlmarxroxas/Documents/jmeter'
+2026-01-17 12:38:52,890 INFO o.a.j.s.FileServer: Set new base='/Users/karlmarxroxas/Documents/jmeter'
+2026-01-17 12:38:53,118 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-01-17 12:38:53,164 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-01-17 12:38:53,167 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-01-17 12:38:53,171 INFO o.a.j.s.SaveService: Loading file: /Users/karlmarxroxas/Documents/jmeter/rps-load-test-scripts.jmx
+2026-01-17 12:38:53,248 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-17 12:38:53,249 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-17 12:38:53,249 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-17 12:38:53,249 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-17 12:38:53,249 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-01-17 12:38:53,249 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-01-17 12:38:53,363 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-01-17 12:38:53,369 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-01-17 12:38:53,369 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: /Users/karlmarxroxas/Documents/jmeter/reports/results.jtl
+2026-01-17 12:38:53,369 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /usr/local/Cellar/jmeter/5.6.3/libexec/bin/reportgenerator.properties
+2026-01-17 12:38:53,370 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-01-17 12:38:53,376 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-01-17 12:38:53,379 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-01-17 12:38:53,379 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-01-17 12:38:53,379 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-01-17 12:38:53,379 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-01-17 12:38:53,379 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-01-17 12:38:53,379 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-01-17 12:38:53,379 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-01-17 12:38:53,380 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-01-17 12:38:53,384 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 12:38:53,384 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 12:38:53,384 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 12:38:53,384 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 12:38:53,384 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 12:38:53,384 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 12:38:53,384 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 12:38:53,385 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 12:38:53,385 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 12:38:53,385 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-01-17 12:38:53,385 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-01-17 12:38:53,386 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-01-17 12:38:53,386 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-01-17 12:38:53,386 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-01-17 12:38:53,386 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-01-17 12:38:53,386 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-01-17 12:38:53,406 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-01-17 12:38:53,406 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-17 12:38:53,406 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-17 12:38:53,412 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-01-17 12:38:53,412 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-01-17 12:38:53,499 INFO o.a.j.r.ClassFinder: Will scan jar /usr/local/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2026-01-17 12:38:53,650 INFO o.a.j.JMeter: Running test (1768624733650)
+2026-01-17 12:38:53,676 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : User
+2026-01-17 12:38:53,676 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group User.
+2026-01-17 12:38:53,676 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-01-17 12:38:53,676 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=true
+2026-01-17 12:38:53,677 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-01-17 12:38:53,677 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-01-17 12:38:53,945 INFO o.a.j.t.JMeterThread: Thread started: User 1-1
+2026-01-17 12:38:53,974 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = Amihans-MacBook-Pro.local
+2026-01-17 12:38:53,984 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-01-17 12:38:53,986 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-01-17 12:38:53,986 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-01-17 12:38:53,986 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-01-17 12:38:53,986 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-01-17 12:38:54,133 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2026-01-17 12:38:54,148 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2026-01-17 12:38:54,148 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2026-01-17 12:38:54,285 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2026-01-17 12:38:54,289 INFO o.a.j.u.SSLManager: KeyStore created OK
+2026-01-17 12:38:54,290 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2026-01-17 12:39:00,821 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/indi.csv
+2026-01-17 12:39:07,215 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/create-non-indi-no-relationship.csv
+2026-01-17 12:39:16,937 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
+2026-01-17 12:39:33,844 INFO o.a.j.r.Summariser: summary +      7 in 00:00:40 =    0.2/s Avg:  2874 Min:   353 Max:  7411 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:39:38,901 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/spouse-officer.csv
+2026-01-17 12:39:54,775 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/spouse-director.csv
+2026-01-17 12:40:03,685 INFO o.a.j.r.Summariser: summary +      4 in 00:00:30 =    0.1/s Avg:  3408 Min:   353 Max:  6986 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:40:03,685 INFO o.a.j.r.Summariser: summary =     11 in 00:01:10 =    0.2/s Avg:  3068 Min:   353 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:40:30,413 INFO o.a.j.r.Summariser: summary +      6 in 00:00:27 =    0.2/s Avg:  2701 Min:   316 Max:  6501 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:40:30,413 INFO o.a.j.r.Summariser: summary =     17 in 00:01:37 =    0.2/s Avg:  2939 Min:   316 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:41:01,579 INFO o.a.j.r.Summariser: summary +      6 in 00:00:31 =    0.2/s Avg:  1729 Min:   314 Max:  4605 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:41:01,580 INFO o.a.j.r.Summariser: summary =     23 in 00:02:08 =    0.2/s Avg:  2623 Min:   314 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:41:01,581 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
+2026-01-17 12:41:16,396 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv
+2026-01-17 12:41:33,347 INFO o.a.j.r.Summariser: summary +      5 in 00:00:32 =    0.2/s Avg:  1976 Min:   319 Max:  4527 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:41:33,348 INFO o.a.j.r.Summariser: summary =     28 in 00:02:40 =    0.2/s Avg:  2508 Min:   314 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:42:02,779 INFO o.a.j.r.Summariser: summary +      6 in 00:00:29 =    0.2/s Avg:  2364 Min:   318 Max:  4495 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:42:02,781 INFO o.a.j.r.Summariser: summary =     34 in 00:03:09 =    0.2/s Avg:  2482 Min:   314 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:42:31,964 INFO o.a.j.r.Summariser: summary +      6 in 00:00:29 =    0.2/s Avg:  1721 Min:   316 Max:  4433 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:42:31,966 INFO o.a.j.r.Summariser: summary =     40 in 00:03:38 =    0.2/s Avg:  2368 Min:   314 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:43:02,170 INFO o.a.j.r.Summariser: summary +      5 in 00:00:30 =    0.2/s Avg:  3098 Min:   384 Max:  5843 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:43:02,171 INFO o.a.j.r.Summariser: summary =     45 in 00:04:09 =    0.2/s Avg:  2449 Min:   314 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:43:30,022 INFO o.a.j.r.Summariser: summary +      6 in 00:00:28 =    0.2/s Avg:  2484 Min:   161 Max:  5071 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:43:30,024 INFO o.a.j.r.Summariser: summary =     51 in 00:04:36 =    0.2/s Avg:  2453 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:43:34,339 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/create-indi-no-relationship.csv
+2026-01-17 12:44:02,690 INFO o.a.j.r.Summariser: summary +      5 in 00:00:33 =    0.2/s Avg:  2769 Min:   324 Max:  4458 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:44:02,691 INFO o.a.j.r.Summariser: summary =     56 in 00:05:09 =    0.2/s Avg:  2481 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:44:33,929 INFO o.a.j.r.Summariser: summary +      5 in 00:00:31 =    0.2/s Avg:  2894 Min:   306 Max:  4927 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:44:33,930 INFO o.a.j.r.Summariser: summary =     61 in 00:05:40 =    0.2/s Avg:  2515 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:45:31,980 INFO o.a.j.r.Summariser: summary +     11 in 00:00:58 =    0.2/s Avg:  2175 Min:   328 Max:  4624 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:45:31,982 INFO o.a.j.r.Summariser: summary =     72 in 00:06:38 =    0.2/s Avg:  2463 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:46:32,705 INFO o.a.j.r.Summariser: summary +     11 in 00:01:01 =    0.2/s Avg:  1862 Min:   308 Max:  4453 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:46:32,707 INFO o.a.j.r.Summariser: summary =     83 in 00:07:39 =    0.2/s Avg:  2384 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:47:34,860 INFO o.a.j.r.Summariser: summary +     12 in 00:01:02 =    0.2/s Avg:  2397 Min:   315 Max:  5257 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:47:34,862 INFO o.a.j.r.Summariser: summary =     95 in 00:08:41 =    0.2/s Avg:  2385 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:48:12,196 INFO o.a.j.s.FileServer: Stored: /Users/karlmarxroxas/Documents/jmeter/non-indi.csv
+2026-01-17 12:48:31,498 INFO o.a.j.r.Summariser: summary +     12 in 00:00:57 =    0.2/s Avg:  2060 Min:   181 Max:  4786 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:48:31,500 INFO o.a.j.r.Summariser: summary =    107 in 00:09:38 =    0.2/s Avg:  2349 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:49:05,076 INFO o.a.j.r.Summariser: summary +      6 in 00:00:34 =    0.2/s Avg:  2538 Min:   332 Max:  5126 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:49:05,077 INFO o.a.j.r.Summariser: summary =    113 in 00:10:11 =    0.2/s Avg:  2359 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:49:31,804 INFO o.a.j.r.Summariser: summary +      5 in 00:00:27 =    0.2/s Avg:  2104 Min:   336 Max:  4754 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:49:31,805 INFO o.a.j.r.Summariser: summary =    118 in 00:10:38 =    0.2/s Avg:  2348 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:50:01,854 INFO o.a.j.r.Summariser: summary +      5 in 00:00:30 =    0.2/s Avg:  2026 Min:   322 Max:  4689 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:50:01,855 INFO o.a.j.r.Summariser: summary =    123 in 00:11:08 =    0.2/s Avg:  2335 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:51:03,150 INFO o.a.j.r.Summariser: summary +     12 in 00:01:01 =    0.2/s Avg:  2058 Min:   307 Max:  4534 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:51:03,152 INFO o.a.j.r.Summariser: summary =    135 in 00:12:10 =    0.2/s Avg:  2310 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:51:32,879 INFO o.a.j.r.Summariser: summary +      5 in 00:00:30 =    0.2/s Avg:  1982 Min:   304 Max:  4569 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:51:32,881 INFO o.a.j.r.Summariser: summary =    140 in 00:12:39 =    0.2/s Avg:  2299 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:52:34,695 INFO o.a.j.r.Summariser: summary +     13 in 00:01:02 =    0.2/s Avg:  2591 Min:   191 Max:  5397 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:52:34,695 INFO o.a.j.r.Summariser: summary =    153 in 00:13:41 =    0.2/s Avg:  2323 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:53:05,212 INFO o.a.j.r.Summariser: summary +      5 in 00:00:31 =    0.2/s Avg:  2725 Min:   294 Max:  4378 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:53:05,212 INFO o.a.j.r.Summariser: summary =    158 in 00:14:12 =    0.2/s Avg:  2336 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:53:32,549 INFO o.a.j.r.Summariser: summary +      5 in 00:00:27 =    0.2/s Avg:  3021 Min:   310 Max:  5402 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:53:32,550 INFO o.a.j.r.Summariser: summary =    163 in 00:14:39 =    0.2/s Avg:  2357 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:54:02,351 INFO o.a.j.r.Summariser: summary +      5 in 00:00:30 =    0.2/s Avg:  2035 Min:   337 Max:  4607 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:54:02,351 INFO o.a.j.r.Summariser: summary =    168 in 00:15:09 =    0.2/s Avg:  2348 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:54:30,288 INFO o.a.j.r.Summariser: summary +      6 in 00:00:28 =    0.2/s Avg:  2400 Min:   315 Max:  4748 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:54:30,288 INFO o.a.j.r.Summariser: summary =    174 in 00:15:37 =    0.2/s Avg:  2349 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:55:05,009 INFO o.a.j.r.Summariser: summary +      7 in 00:00:35 =    0.2/s Avg:  2026 Min:   296 Max:  4808 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:55:05,010 INFO o.a.j.r.Summariser: summary =    181 in 00:16:11 =    0.2/s Avg:  2337 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:55:31,268 INFO o.a.j.r.Summariser: summary +      7 in 00:00:26 =    0.3/s Avg:  1543 Min:   302 Max:  4453 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:55:31,269 INFO o.a.j.r.Summariser: summary =    188 in 00:16:38 =    0.2/s Avg:  2307 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:56:33,773 INFO o.a.j.r.Summariser: summary +     11 in 00:01:03 =    0.2/s Avg:  2681 Min:   195 Max:  5787 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:56:33,774 INFO o.a.j.r.Summariser: summary =    199 in 00:17:40 =    0.2/s Avg:  2328 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:57:02,958 INFO o.a.j.r.Summariser: summary +      5 in 00:00:29 =    0.2/s Avg:  1928 Min:   209 Max:  4557 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:57:02,959 INFO o.a.j.r.Summariser: summary =    204 in 00:18:09 =    0.2/s Avg:  2318 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:57:33,401 INFO o.a.j.r.Summariser: summary +      4 in 00:00:30 =    0.1/s Avg:  2342 Min:   312 Max:  4455 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:57:33,402 INFO o.a.j.r.Summariser: summary =    208 in 00:18:40 =    0.2/s Avg:  2319 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:58:04,601 INFO o.a.j.r.Summariser: summary +      5 in 00:00:31 =    0.2/s Avg:  3127 Min:   300 Max:  5594 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:58:04,603 INFO o.a.j.r.Summariser: summary =    213 in 00:19:11 =    0.2/s Avg:  2338 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:58:32,555 INFO o.a.j.r.Summariser: summary +      6 in 00:00:28 =    0.2/s Avg:  2622 Min:   318 Max:  5471 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2026-01-17 12:58:32,556 INFO o.a.j.r.Summariser: summary =    219 in 00:19:39 =    0.2/s Avg:  2345 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:58:54,880 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: User 1-1
+2026-01-17 12:58:54,881 INFO o.a.j.t.JMeterThread: Thread finished: User 1-1
+2026-01-17 12:58:54,887 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-01-17 12:58:54,887 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/indi.csv
+2026-01-17 12:58:54,887 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/director-e1a.csv
+2026-01-17 12:58:54,887 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/officer-e1a.csv
+2026-01-17 12:58:54,888 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/spouse-officer.csv
+2026-01-17 12:58:54,888 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/create-indi-no-relationship.csv
+2026-01-17 12:58:54,888 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/spouse-director.csv
+2026-01-17 12:58:54,888 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/non-indi.csv
+2026-01-17 12:58:54,888 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/create-non-indi-no-relationship.csv
+2026-01-17 12:58:54,888 INFO o.a.j.s.FileServer: Close: /Users/karlmarxroxas/Documents/jmeter/csvs/companies.csv
+2026-01-17 12:58:54,891 INFO o.a.j.r.Summariser: summary +      5 in 00:00:22 =    0.2/s Avg:  2135 Min:   370 Max:  4793 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+2026-01-17 12:58:54,891 INFO o.a.j.r.Summariser: summary =    224 in 00:20:01 =    0.2/s Avg:  2341 Min:   161 Max:  7411 Err:     0 (0.00%)
+2026-01-17 12:58:54,892 INFO o.a.j.JMeter: Generating Dashboard
+2026-01-17 12:58:54,893 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-01-17 12:58:54,913 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-01-17 12:58:55,012 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-01-17 12:58:55,012 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-01-17 12:58:55,015 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-01-17 12:58:55,015 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-01-17 12:58:55,020 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-01-17 12:58:55,022 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-01-17 12:58:55,023 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-01-17 12:58:55,023 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-01-17 12:58:55,042 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-01-17 12:58:55,042 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-01-17 12:58:55,042 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-01-17 12:58:55,042 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-01-17 12:58:55,048 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-01-17 12:58:55,048 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 1568 samples
+2026-01-17 12:58:55,048 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-01-17 12:58:55,048 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-01-17 12:58:55,048 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-01-17 12:58:55,049 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-01-17 12:58:55,049 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-01-17 12:58:55,049 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-01-17 12:58:55,054 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-01-17 12:58:55,055 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-01-17 12:58:55,055 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-01-17 12:58:55,055 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-01-17 12:58:55,056 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 3360 samples
+2026-01-17 12:58:55,056 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 672 samples
+2026-01-17 12:58:55,056 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 224 samples
+2026-01-17 12:58:55,056 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 224 samples produced in 107ms on channel 0
+2026-01-17 12:58:55,057 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-01-17 12:58:55,166 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-01-17 12:58:55,166 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-01-17 12:58:55,167 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-01-17 12:58:55,167 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-01-17 12:58:55,167 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /Users/karlmarxroxas/Documents/jmeter/reports/html/statistics.json
+2026-01-17 12:58:55,228 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-01-17 12:58:55,231 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /Users/karlmarxroxas/Documents/jmeter/reports/html
+2026-01-17 12:58:55,398 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /Users/karlmarxroxas/Documents/jmeter/reports/html, creating folder structure
+2026-01-17 12:58:55,402 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/usr/local/Cellar/jmeter/5.6.3/libexec/bin/report-template' to '/Users/karlmarxroxas/Documents/jmeter/reports/html', got message: /Users/karlmarxroxas/Documents/jmeter/reports/html, found non empty folder with following content [/Users/karlmarxroxas/Documents/jmeter/reports/html/statistics.json], will be ignored
+2026-01-17 12:58:55,832 INFO o.a.j.JMeter: Dashboard generated

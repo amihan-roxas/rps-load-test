@@ -16,3 +16,6 @@ This is used for Mac device only
 
 #### Generate HTML Report 
 `./jmeter -n -t 'location/of/test/file.jmx' -l 'location/of/result/file .jtl' -e -o 'loc/of/reports/folder'`
+
+Sample
+`jmeter -n -t /Users/karlmarxroxas/Documents/jmeter/rps-load-test-scripts.jmx -l /Users/karlmarxroxas/Documents/jmeter/reports/results.jtl -e -o /Users/karlmarxroxas/Documents/jmeter/reports/html`
