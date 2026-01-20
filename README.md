@@ -23,3 +23,10 @@ Sample
 
 #### Document
 RP Checklist Guide: https://docs.google.com/document/d/1Mt9_8WB_gTyzNGJ_Ca0C_X5DYKvrmR8moFX7Ev_x3eg/edit?usp=sharing
+
+#### Issues
+If you encounter OOM errors, try increasing JVM Heap memory. Edit jmeter batch file or jmeter itself.
+Example: I want to change 4gb to 8gb
+`"${HEAP:="-Xms4g -Xmx4g -XX:MaxMetaspaceSize=256m"}"`
+to
+`"${HEAP:="-Xms8g -Xmx8g -XX:MaxMetaspaceSize=256m"}"`
