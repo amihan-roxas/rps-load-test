@@ -30,3 +30,6 @@ Example: I want to change 4gb to 8gb
 `"${HEAP:="-Xms4g -Xmx4g -XX:MaxMetaspaceSize=256m"}"`
 to
 `"${HEAP:="-Xms8g -Xmx8g -XX:MaxMetaspaceSize=256m"}"`
+
+Load .jtl result on JMeter:
+1. open 
