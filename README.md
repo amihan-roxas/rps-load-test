@@ -24,6 +24,11 @@ Sample
 #### Document
 RP Checklist Guide: https://docs.google.com/document/d/1Mt9_8WB_gTyzNGJ_Ca0C_X5DYKvrmR8moFX7Ev_x3eg/edit?usp=sharing
 
+#### Changing users on .jmx
+1. Go to `python_script` folder
+2. `bdo_users.csv` will replace all `user001` up to `user100`
+3. `python3 update_users_script.py` in your terminal
+
 #### Issues
 If you encounter OOM errors, try increasing JVM Heap memory. Edit jmeter batch file or jmeter itself.
 Example: I want to change 4gb to 8gb
@@ -31,5 +36,3 @@ Example: I want to change 4gb to 8gb
 to
 `"${HEAP:="-Xms8g -Xmx8g -XX:MaxMetaspaceSize=256m"}"`
 
-Load .jtl result on JMeter:
-1. open 
