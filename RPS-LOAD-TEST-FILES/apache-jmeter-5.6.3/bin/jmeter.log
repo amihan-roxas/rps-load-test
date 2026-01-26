@@ -1,0 +1,137 @@
+2026-01-21 11:47:21,268 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-01-21 11:47:21,281 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2026-01-21 11:47:21,282 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: Version 5.6.3
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: java.version=21.0.2
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: os.name=Linux
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: os.arch=amd64
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: os.version=6.14.0-37-generic
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: java.awt.headless=null
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: Max memory     =8589934592
+2026-01-21 11:47:21,286 INFO o.a.j.JMeter: Available Processors =8
+2026-01-21 11:47:21,293 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-01-21 11:47:21,294 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-01-21 11:47:21,294 INFO o.a.j.JMeter: JMeterHome=/home/karl/Documents/work/related party shit/JMeter /rps-load-test/apache-jmeter-5.6.3
+2026-01-21 11:47:21,294 INFO o.a.j.JMeter: user.dir  =/home/karl/Documents/work/related party shit/JMeter /rps-load-test/apache-jmeter-5.6.3/bin
+2026-01-21 11:47:21,294 INFO o.a.j.JMeter: PWD       =/home/karl/Documents/work/related party shit/JMeter /rps-load-test/apache-jmeter-5.6.3/bin
+2026-01-21 11:47:21,294 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: Supercrane FullName: Supercrane
+2026-01-21 11:47:21,306 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2026-01-21 11:47:21,461 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2026-01-21 11:48:40,071 INFO o.a.j.s.FileServer: Default base='/home/karl/Documents/work/related party shit/JMeter /rps-load-test/apache-jmeter-5.6.3/bin'
+2026-01-21 11:48:40,074 INFO o.a.j.g.a.Load: Loading file: /home/karl/Documents/work/related party shit/JMeter /rps-load-test/rps-load-test-scripts.jmx
+2026-01-21 11:48:40,075 INFO o.a.j.s.FileServer: Set new base='/home/karl/Documents/work/related party shit/JMeter /rps-load-test'
+2026-01-21 11:48:40,219 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-01-21 11:48:40,228 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-01-21 11:48:40,229 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-01-21 11:48:40,230 INFO o.a.j.s.SaveService: Loading file: /home/karl/Documents/work/related party shit/JMeter /rps-load-test/rps-load-test-scripts.jmx
+2026-01-21 11:48:40,252 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-21 11:48:40,252 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-21 11:48:40,252 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-21 11:48:40,252 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-01-21 11:48:40,252 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-01-21 11:48:40,252 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-01-21 11:48:41,205 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-01-21 11:48:41,205 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-01-21 11:48:41,205 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-01-21 11:48:41,205 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-01-21 11:49:46,233 INFO o.a.j.s.FileServer: Set new base='/home/karl/Documents/work/related party shit/JMeter /rps-load-test'
+2026-01-21 11:49:58,820 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-01-21 11:49:58,821 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-21 11:49:58,821 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-21 11:49:58,822 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-01-21 11:49:58,822 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-01-21 11:49:58,866 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-01-21 11:49:59,477 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : User 01
+2026-01-21 11:49:59,477 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group User 01.
+2026-01-21 11:49:59,477 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-01-21 11:49:59,477 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2026-01-21 11:49:59,481 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-01-21 11:49:59,481 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-01-21 11:49:59,485 INFO o.a.j.t.JMeterThread: Thread started: User 01 1-1
+2026-01-21 11:49:59,498 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = Supercrane
+2026-01-21 11:49:59,506 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-01-21 11:49:59,738 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2026-01-21 11:49:59,740 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2026-01-21 11:49:59,740 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2026-01-21 11:49:59,783 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2026-01-21 11:49:59,785 INFO o.a.j.u.SSLManager: KeyStore created OK
+2026-01-21 11:49:59,785 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2026-01-21 11:50:11,828 INFO o.a.j.s.FileServer: Stored: /home/karl/Documents/nmblr/related party shit/JMeter /rps-load-test/create-indi-no-relationship.csv
+2026-01-21 11:50:11,828 ERROR o.a.j.t.JMeterThread: Test failed!
+java.lang.IllegalArgumentException: Could not read file header line for file /home/karl/Documents/nmblr/related party shit/JMeter /rps-load-test/create-indi-no-relationship.csv
+	at org.apache.jmeter.services.FileServer.reserveFile(FileServer.java:283) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.config.CSVDataSet.initVars(CSVDataSet.java:208) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.config.CSVDataSet.iterationStart(CSVDataSet.java:171) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.control.GenericController.fireIterationStart(GenericController.java:412) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.control.GenericController.fireIterEvents(GenericController.java:404) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:170) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.control.InterleaveControl.nextIsAController(InterleaveControl.java:104) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:185) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.control.InterleaveControl.next(InterleaveControl.java:96) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:232) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:185) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:119) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:109) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:303) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.IllegalArgumentException: File create-indi-no-relationship.csv must exist and be readable
+	at org.apache.jmeter.services.FileServer.createBufferedReader(FileServer.java:424) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.services.FileServer.readLine(FileServer.java:340) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.services.FileServer.readLine(FileServer.java:324) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.services.FileServer.reserveFile(FileServer.java:272) ~[ApacheJMeter_core.jar:5.6.3]
+	... 14 more
+2026-01-21 11:50:11,838 INFO o.a.j.t.JMeterThread: Thread finished: User 01 1-1
+2026-01-21 11:50:11,841 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-01-21 11:50:11,841 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-01-21 11:53:10,576 ERROR o.a.j.g.a.Save: Error saving tree.
+java.io.FileNotFoundException: /home/karl/Documents/work/related party shit/JMeter /rps-load-test/rps-load-test-scripts.jmx (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289) ~[?:?]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230) ~[?:?]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:118) ~[?:?]
+	at org.apache.jmeter.gui.action.Save.backupAndSave(Save.java:261) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.Save.doAction(Save.java:176) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:83) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.ActionRouter.doActionNow(ActionRouter.java:120) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.AbstractAction.popupShouldSave(AbstractAction.java:79) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.Start.doAction(Start.java:114) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:83) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:65) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) [?:?]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) [?:?]
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2026-01-21 11:53:10,577 ERROR o.a.j.u.JMeterUtils: Couldn't save test plan to file: /home/karl/Documents/work/related party shit/JMeter /rps-load-test/rps-load-test-scripts.jmx
+/home/karl/Documents/work/related party shit/JMeter /rps-load-test/rps-load-test-scripts.jmx (No such file or directory)
+2026-01-21 11:53:10,587 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-01-21 11:53:10,588 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-01-21 11:53:10,597 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-01-21 11:53:11,086 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : User 01
+2026-01-21 11:53:11,086 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group User 01.
+2026-01-21 11:53:11,086 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-01-21 11:53:11,086 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2026-01-21 11:53:11,089 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-01-21 11:53:11,089 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-01-21 11:53:11,094 INFO o.a.j.t.JMeterThread: Thread started: User 01 1-1
+2026-01-21 11:53:18,079 INFO o.a.j.s.FileServer: Stored: /home/karl/Documents/nmblr/related party shit/JMeter /rps-load-test/indi.csv
+2026-01-21 11:53:25,077 INFO o.a.j.s.FileServer: Stored: /home/karl/Documents/nmblr/related party shit/JMeter /rps-load-test/create-non-indi-no-relationship.csv
+2026-01-21 11:53:25,396 INFO o.a.j.g.a.Start: Stopping test
+2026-01-21 11:53:25,400 INFO o.a.j.t.JMeterThread: Stopping: User 01 1-1
+2026-01-21 11:53:25,401 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2026-01-21 11:53:25,401 INFO o.a.j.t.JMeterThread: Thread finished: User 01 1-1
+2026-01-21 11:53:25,402 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-01-21 11:53:25,402 INFO o.a.j.s.FileServer: Close: /home/karl/Documents/nmblr/related party shit/JMeter /rps-load-test/indi.csv
+2026-01-21 11:53:25,403 INFO o.a.j.s.FileServer: Close: /home/karl/Documents/nmblr/related party shit/JMeter /rps-load-test/create-non-indi-no-relationship.csv
+2026-01-21 11:53:25,404 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)

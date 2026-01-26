@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="User Creation">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">49</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login">
+            <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">/admin/query</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+  &quot;operationName&quot;: &quot;login&quot;,&#xd;
+  &quot;variables&quot;: {&#xd;
+    &quot;domain&quot;: &quot;agsx&quot;,&#xd;
+    &quot;username&quot;: &quot;kroxas&quot;,&#xd;
+    &quot;password&quot;: &quot;Welcome@1234&quot;&#xd;
+  },&#xd;
+  &quot;query&quot;: &quot;mutation login($domain: String!, $username: String!, $password: String!) {\n  login(domain: $domain, username: $username, password: $password) {\n    token\n    __typename\n  }\n}&quot;&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor">
+              <stringProp name="JSONPostProcessor.referenceNames">accessToken</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">data.login.token</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">
+          <stringProp name="HTTPSampler.domain">server.test.bdo-rps.pumba.amihan.net</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/admin/query</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;operationName&quot;: &quot;createUser&quot;,&#xd;
+    &quot;variables&quot;: {&#xd;
+        &quot;domain&quot;: &quot;agsx&quot;,&#xd;
+        &quot;username&quot;: &quot;${username}&quot;,&#xd;
+        &quot;firstName&quot;: &quot;${firstName}&quot;,&#xd;
+        &quot;middleName&quot;: null,&#xd;
+        &quot;lastName&quot;: &quot;${lastName}&quot;,&#xd;
+        &quot;groupId&quot;: &quot;0e9586c9-a2d0-40d8-9489-ab5a7b5fbe9a&quot;,&#xd;
+        &quot;businessUnit&quot;: &quot;BDO FOUNDATION&quot;,&#xd;
+        &quot;branch&quot;: &quot;N/A&quot;,&#xd;
+        &quot;remarks&quot;: &quot;JMETER_}&quot;,&#xd;
+        &quot;status&quot;: &quot;ACTIVE&quot;&#xd;
+    },&#xd;
+    &quot;query&quot;: &quot;mutation createUser($domain: String!, $username: String!, $firstName: String!, $middleName: String, $lastName: String!, $groupId: ID!, $businessUnit: String!, $branch: String!, $remarks: String, $status: String!) {\n  createUser(\n    input: {domain: $domain, username: $username, firstName: $firstName, middleName: $middleName, lastName: $lastName, groupId: $groupId, businessUnit: $businessUnit, branch: $branch, remarks: $remarks, status: $status}\n  ) {\n    id\n    created\n    updated\n    domain\n    username\n    firstName\n    middleName\n    lastName\n    group {\n      ... on Group {\n        id\n        name\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">jwt</stringProp>
+              <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Users">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding">UTF-8</stringProp>
+          <stringProp name="filename">/Users/karlmarxroxas/Documents/jmeter/users.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames"></stringProp>
+        </CSVDataSet>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
